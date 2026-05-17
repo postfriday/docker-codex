@@ -1,7 +1,8 @@
-FROM node:24-alpine3.23
+FROM node:24-slim
 
 RUN npm i -g @openai/codex mcp-remote
-RUN apk add --no-cache bubblewrap ripgrep git
+RUN apt update && \
+    apt install -y bubblewrap ripgrep git
 
 ARG VERSION
 ARG REVISION
@@ -11,3 +12,5 @@ LABEL org.opencontainers.image.version="${VERSION}}" \
       org.opencontainers.image.revision="${REVISION}" \
       org.opencontainers.image.source="${SOURCE}" \
       org.opencontainers.image.created="${CREATED}"
+
+      ENTRYPOINT [ "/usr/local/bin/codex" ]
