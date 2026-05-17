@@ -8,12 +8,14 @@ version: '3'
 dotenv: ['.env']
 
 vars:
-  IMAGE_NAME: '{{.IMAGE_NAME | default "docker-codex"}}'
+  IMAGE_NAME: '{{.IMAGE_NAME | default "myapp"}}'
   DOCKERFILE: '{{.DOCKERFILE | default "Dockerfile"}}'
   CONTEXT: '{{.CONTEXT | default "."}}'
 
   VERSION:
-    sh: git describe --tags --abbrev=0 2>/dev/null | sed 's/^v//' || echo "0.0.0"
+    sh: |
+      v=$(git describe --tags --abbrev=0 2>/dev/null) || v="v0.0.0"
+      echo "${v#v}"
   GIT_SHA:
     sh: git rev-parse --short HEAD
   GIT_SHA_FULL:
