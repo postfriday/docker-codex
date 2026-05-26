@@ -14,4 +14,6 @@ LABEL org.opencontainers.image.version="${VERSION}}" \
       org.opencontainers.image.source="${SOURCE}" \
       org.opencontainers.image.created="${CREATED}"
 
-      ENTRYPOINT [ "/usr/local/bin/codex" ]
+WORKDIR /workspace
+
+ENTRYPOINT [ "/usr/local/bin/codex" ]
