@@ -1,6 +1,8 @@
 FROM node:24-slim
 
-RUN npm i -g @openai/codex@0.135.0 mcp-remote
+ARG CODEX_VERSION=0.135.0
+
+RUN npm i -g @openai/codex@${CODEX_VERSION} mcp-remote
 RUN apt update && \
     apt install -y bubblewrap ripgrep git \
     && rm -rf /var/lib/apt/lists/*
