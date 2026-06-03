@@ -1,6 +1,6 @@
 FROM node:24-slim
 
-ARG CODEX_VERSION=0.135.0
+ARG CODEX_VERSION=0.136.0
 
 RUN npm i -g @openai/codex@${CODEX_VERSION} mcp-remote
 RUN apt update && \
