@@ -4,7 +4,7 @@ ARG CODEX_VERSION=0.137.0
 
 RUN npm i -g @openai/codex@${CODEX_VERSION} mcp-remote
 RUN apt update && \
-    apt install -y bubblewrap ripgrep git \
+    apt install -y bubblewrap curl jq git ripgrep \
     && rm -rf /var/lib/apt/lists/*
 
 ARG VERSION
