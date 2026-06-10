@@ -8,7 +8,7 @@ version: '3'
 dotenv: ['.env']
 
 vars:
-  IMAGE_NAME: '{{.IMAGE_NAME | default "myapp"}}'
+  IMAGE_NAME: '{{.IMAGE_NAME | default "docker-codex"}}'
   DOCKERFILE: '{{.DOCKERFILE | default "Dockerfile"}}'
   CONTEXT: '{{.CONTEXT | default "."}}'
 
