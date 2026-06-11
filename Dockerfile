@@ -8,8 +8,11 @@ RUN apt-get update && \
     apt-get install -y --no-install-recommends bubblewrap curl jq git ripgrep ca-certificates && \
     rm -rf /var/lib/apt/lists/*
 
-RUN npx -y @playwright/mcp install-browser chromium
-RUN npx playwright install-deps
+RUN npx -y @playwright/mcp install-browser chromium && \
+    npx playwright install-deps && \
+    git clone https://github.com/atomkraft/yandex-metrika-mcp.git /opt/yandex-metrika-mcp && \
+    cd /opt/yandex-metrika-mcp && \
+    npm install
 
 ARG VERSION
 ARG REVISION
