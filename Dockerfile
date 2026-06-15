@@ -14,6 +14,9 @@ RUN npx -y @playwright/mcp install-browser chromium && \
     cd /opt/yandex-metrika-mcp && \
     npm install
 
+RUN curl -fsSL https://claude.ai/install.sh | bash
+ENV PATH="/root/.local/bin:${PATH}"
+
 ARG VERSION
 ARG REVISION
 ARG SOURCE
