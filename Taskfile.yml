@@ -13,9 +13,7 @@ vars:
   CONTEXT: '{{.CONTEXT | default "."}}'
 
   VERSION:
-    sh: |
-      v=$(git describe --tags --abbrev=0 2>/dev/null) || v="v0.0.0"
-      echo "${v#v}"
+    sh: sed -n '1p' VERSION | tr -d '[:space:]'
   GIT_SHA:
     sh: git rev-parse --short HEAD
   GIT_SHA_FULL:
@@ -44,6 +42,125 @@ tasks:
         echo "Build date: {{.BUILD_DATE}}"
         echo "Dirty:      {{if .IS_DIRTY}}yes{{else}}no{{end}}"
         echo "Dev tag:    {{.DEV_TAG}}"
+
+  bump:
+    desc: Поднять версию в VERSION (PART=patch|minor|major, по умолчанию patch)
+    silent: true
+    vars:
+      PART: '{{.PART | default "patch"}}'
+    cmds:
+      - |
+        set -eu
+
+        version="$(sed -n '1p' VERSION | tr -d '[:space:]')"
+        if ! printf '%s\n' "$version" | grep -Eq '^[0-9]+[.][0-9]+[.][0-9]+$'; then
+          echo "VERSION must contain a semver value like 1.2.3, got: $version" >&2
+          exit 1
+        fi
+
+        IFS=. read -r major minor patch <<EOF
+        $version
+        EOF
+
+        case "{{.PART}}" in
+          major)
+            major=$((major + 1))
+            minor=0
+            patch=0
+            ;;
+          minor)
+            minor=$((minor + 1))
+            patch=0
+            ;;
+          patch)
+            patch=$((patch + 1))
+            ;;
+          *)
+            echo "PART must be one of: patch, minor, major" >&2
+            exit 1
+            ;;
+        esac
+
+        new_version="${major}.${minor}.${patch}"
+        printf '%s\n' "$new_version" > VERSION
+        echo "$version -> $new_version"
+
+  release:
+    desc: Создать release-коммит и git-тег из VERSION (PUSH=true для отправки)
+    silent: true
+    vars:
+      PUSH: '{{.PUSH | default "false"}}'
+      DRY_RUN: '{{.DRY_RUN | default "false"}}'
+    cmds:
+      - |
+        set -eu
+
+        version="$(sed -n '1p' VERSION | tr -d '[:space:]')"
+        if ! printf '%s\n' "$version" | grep -Eq '^[0-9]+[.][0-9]+[.][0-9]+$'; then
+          echo "VERSION must contain a semver value like 1.2.3, got: $version" >&2
+          exit 1
+        fi
+
+        tag="v${version}"
+        dry_run="{{.DRY_RUN}}"
+
+        case "$dry_run" in
+          true|false) ;;
+          *)
+            echo "DRY_RUN must be true or false" >&2
+            exit 1
+            ;;
+        esac
+
+        case "{{.PUSH}}" in
+          true|false) ;;
+          *)
+            echo "PUSH must be true or false" >&2
+            exit 1
+            ;;
+        esac
+
+        if git rev-parse -q --verify "refs/tags/${tag}" >/dev/null; then
+          echo "Tag ${tag} already exists" >&2
+          exit 1
+        fi
+
+        other_changes="$(git status --porcelain --untracked-files=all | grep -v ' VERSION$' || true)"
+        if [ -n "$other_changes" ]; then
+          echo "Release expects only VERSION to be changed. Commit or stash other changes first:" >&2
+          printf '%s\n' "$other_changes" >&2
+          exit 1
+        fi
+
+        run() {
+          if [ "$dry_run" = "true" ]; then
+            printf 'DRY RUN:'
+            printf ' %s' "$@"
+            printf '\n'
+          else
+            "$@"
+          fi
+        }
+
+        if [ -n "$(git status --porcelain --untracked-files=all -- VERSION)" ]; then
+          run git add VERSION
+          run git commit -m "chore: release ${tag}"
+        fi
+
+        run git tag -a "$tag" -m "$tag"
+
+        if [ "{{.PUSH}}" = "true" ]; then
+          branch="$(git rev-parse --abbrev-ref HEAD)"
+          if [ "$branch" = "HEAD" ]; then
+            echo "Cannot push from detached HEAD" >&2
+            exit 1
+          fi
+
+          run git push origin "$branch"
+          run git push origin "$tag"
+        fi
+
+        echo "Prepared release ${tag}"
 
   lint:
     desc: Проверка Dockerfile через hadolint
