@@ -1,8 +1,8 @@
 FROM node:24-slim
 
-ARG CODEX_VERSION=0.142.0
-
-RUN npm i -g @openai/codex@${CODEX_VERSION} mcp-remote
+ARG CODEX_VERSION=0.142.4
+ARG OPENCODE_VERSION=1.17.9
+ARG CLAUDE_CODE_VERSION=2.1.187
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends bubblewrap curl jq git ripgrep ca-certificates && \
@@ -14,8 +14,11 @@ RUN npx -y @playwright/mcp install-browser chromium && \
     cd /opt/yandex-metrika-mcp && \
     npm install
 
-RUN curl -fsSL https://claude.ai/install.sh | bash
-ENV PATH="/root/.local/bin:${PATH}"
+RUN npm i -g @openai/codex@${CODEX_VERSION} mcp-remote
+
+RUN npm i -g @anthropic-ai/claude-code@${CLAUDE_CODE_VERSION}
+
+RUN npm i -g opencode-ai@${OPENCODE_VERSION}
 
 ARG VERSION
 ARG REVISION
