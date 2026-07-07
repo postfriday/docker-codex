@@ -5,8 +5,15 @@ ARG OPENCODE_VERSION=1.17.9
 ARG CLAUDE_CODE_VERSION=2.1.187
 
 RUN apt-get update && \
-    apt-get install -y --no-install-recommends bubblewrap curl jq git ripgrep ca-certificates && \
-    rm -rf /var/lib/apt/lists/*
+    apt-get install -y --no-install-recommends \
+        bubblewrap \
+        ca-certificates \
+        curl \
+        git \
+        jq \
+        ripgrep \
+        shellcheck \
+    && rm -rf /var/lib/apt/lists/*
 
 RUN npx -y @playwright/mcp install-browser chromium && \
     npx playwright install-deps && \
