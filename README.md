@@ -5,3 +5,6 @@
 ---
 * Репозиторий: https://github.com/postfriday/docker-codex
 * GitHub Actions: https://github.com/postfriday/docker-codex/actions
+
+Релиз новой версии:
+* `task bump && task release && git push --all && git push --tags`
