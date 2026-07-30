@@ -52,4 +52,4 @@ RUN install -m 0755 -d /etc/apt/keyrings \
         'Signed-By: /etc/apt/keyrings/docker.asc' \
         > /etc/apt/sources.list.d/docker.sources \
     && apt update \
-    &&apt install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+    && apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
