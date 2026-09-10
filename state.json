@@ -84,6 +84,12 @@
           "run_attempt": "1",
           "finished_at": "2026-09-10T19:20:55.497627+00:00",
           "error": "Missing BuildKit provenance or SBOM"
+        },
+        "34521854579:1": {
+          "status": "running",
+          "started_at": "2026-09-10T19:41:13.435255+00:00",
+          "run_id": "34521854579",
+          "run_attempt": "1"
         }
       },
       "failure_count": 1,
