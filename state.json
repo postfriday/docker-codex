@@ -66,10 +66,13 @@
         "opencode": "1.18.30",
         "claude": "2.1.268"
       },
-      "status": "reserved",
+      "status": "candidate_saved",
       "candidate_tag": "candidate-v1.0.21",
-      "candidate_digest": null,
-      "platform_digests": {},
+      "candidate_digest": "sha256:0fd8d6586cb2bbd024a7c139c6ead1d8b9af13add6a84c61d62f18bcfc15a948",
+      "platform_digests": {
+        "amd64": "sha256:c82daa7a41ff514ef3884606dc75adf9be058d5bd2664bec230bc721552d33fa",
+        "arm64": "sha256:e880b8ad86a04d58c2ba3ce11e385db72d3b9245d697fcc55701e334b4a08937"
+      },
       "checks": {},
       "reports": {},
       "attestation": null,
