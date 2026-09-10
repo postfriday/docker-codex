@@ -9,6 +9,12 @@ This repository packages AI command-line tools in a Docker image based on `node:
 - `.github/workflows/build-push.yml` publishes AMD64/ARM64 images to GHCR with provenance, SBOM generation, and vulnerability scanning.
 - `README.md` documents runtime permissions and releases. There are no application source, test, or asset directories.
 
+## Task Documentation
+
+Keep active tasks in `docs/tasks/NNNNNNNNNN-task-slug/`, where `NNNNNNNNNN` is a ten-digit task number and `task-slug` is lowercase kebab-case. Create and maintain three files in that directory: `context.md` for task context and terminology, `task.md` for requirements, status, and acceptance criteria, and `adr.md` for architectural decisions and their rationale. Keep links between these documents relative and update references when moving them.
+
+After completing a task, mark it completed in `task.md` and move its entire directory to `docs/tasks/completed/NNNNNNNNNN-task-slug/`, preserving its number, slug, and documents.
+
 ## Build, Test, and Development Commands
 
 Install Docker and Task locally; linting and scanning additionally require Hadolint and Trivy.
