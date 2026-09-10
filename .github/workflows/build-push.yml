@@ -1,119 +1,78 @@
 name: Build and Push Image
 
-# Запускается на пуш semver-тега (v1.4.2, v2.0.0-rc.1 и т.д.).
-# Также доступен ручной запуск на произвольной ветке — в этом случае публикуется
-# только sha-тег, semver-алиасы пропускаются metadata-action автоматически.
 on:
   push:
     tags: ['v*.*.*']
   workflow_dispatch:
+    inputs:
+      release_id:
+        description: Exact release tag vX.Y.Z (also select this tag as the workflow ref)
+        required: true
+        type: string
 
-env:
-  REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
-  PLATFORMS: linux/amd64,linux/arm64
+concurrency:
+  group: docker-codex-release
+  cancel-in-progress: false
+
+permissions: {}
 
 jobs:
-  build-push:
-    name: Build, push, sign
+  publish:
     runs-on: ubuntu-latest
+    timeout-minutes: 150
     permissions:
-      contents: read
-      packages: write       # push в GHCR
-      id-token: write       # подпись через Sigstore
-      attestations: write   # SLSA provenance
-      security-events: write # SARIF из trivy
-
+      contents: write
+      packages: write
+      issues: write
+      actions: read
+      id-token: write
+      attestations: write
+      security-events: write
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+      RELEASE_ID: ${{ inputs.release_id || github.ref_name }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Set up QEMU
-        uses: docker/setup-qemu-action@v3
-
-      - name: Set up Docker Buildx
-        uses: docker/setup-buildx-action@v3
-
-      - name: Log in to ${{ env.REGISTRY }}
-        uses: docker/login-action@v3
+      # Run the coordinator from the default branch; it validates and checks out
+      # the exact release SHA before building. Old tags need not contain this code.
+      - uses: actions/checkout@v4
         with:
-          registry: ${{ env.REGISTRY }}
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+      - name: Preserve coordinator across release checkout
+        run: cp -R scripts/release "$RUNNER_TEMP/release-coordinator"
+      - name: Register publishing attempt
+        run: python3 "$RUNNER_TEMP/release-coordinator/automation.py" begin
+      - uses: actions/setup-go@v5
+        with:
+          go-version: '1.24.x'
+          cache: false
+      - name: Install registry client
+        run: go install github.com/google/go-containerregistry/cmd/crane@v0.20.3
+      - uses: docker/setup-qemu-action@v3
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
-
-      # metadata-action сам разбирает semver-тег (v1.4.2 -> 1.4.2, 1.4, 1)
-      # и генерирует OCI-метки. Это заменяет всё ручное теггирование из Taskfile.
-      - name: Extract tags and labels
-        id: meta
-        uses: docker/metadata-action@v5
+      - uses: aquasecurity/setup-trivy@v0.3.1
         with:
-          images: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-          tags: |
-            type=semver,pattern={{version}}
-            type=semver,pattern={{major}}.{{minor}}
-            type=semver,pattern={{major}}
-            type=sha,prefix=,format=short
-            type=sha,prefix=,format=long
-          labels: |
-            org.opencontainers.image.title=${{ github.event.repository.name }}
-            org.opencontainers.image.source=${{ github.event.repository.html_url }}
-            org.opencontainers.image.licenses=${{ github.event.repository.license.spdx_id || 'NOASSERTION' }}
-
-      - name: Build and push
-        id: build
-        uses: docker/build-push-action@v6
-        with:
-          context: .
-          file: ./Dockerfile
-          platforms: ${{ env.PLATFORMS }}
-          push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
-          build-args: |
-            VERSION=${{ steps.meta.outputs.version }}
-            GIT_SHA=${{ github.sha }}
-            BUILD_DATE=${{ fromJSON(steps.meta.outputs.json).labels['org.opencontainers.image.created'] }}
-          cache-from: type=gha
-          cache-to: type=gha,mode=max
-          provenance: mode=max
-          sbom: true
-
-      # Подпись + SLSA attestation через Sigstore. Делает образ верифицируемым
-      # через `cosign verify-attestation` или `gh attestation verify`.
-      - name: Attest build provenance
+          version: v0.69.3
+          cache: true
+      - name: Restore candidate and verify both platforms
+        id: candidate
+        run: python3 "$RUNNER_TEMP/release-coordinator/automation.py" prepare
+      - name: Attest candidate provenance
+        if: steps.candidate.outputs.done != 'true' && steps.candidate.outputs.attest == 'true'
         uses: actions/attest-build-provenance@v2
         with:
-          subject-name: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}
-          subject-digest: ${{ steps.build.outputs.digest }}
+          subject-name: ${{ steps.candidate.outputs.image }}
+          subject-digest: ${{ steps.candidate.outputs.digest }}
           push-to-registry: true
-
-      # Сканируем по digest, чтобы гарантированно проверить только что собранный образ,
-      # а не случайно перевешенный тег.
-      - name: Scan image with Trivy
-        uses: aquasecurity/trivy-action@v0.36.0
-        with:
-          image-ref: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}@${{ steps.build.outputs.digest }}
-          format: sarif
-          output: trivy-results.sarif
-          severity: CRITICAL,HIGH
-          ignore-unfixed: true
-
-      - name: Upload Trivy results to GitHub Security
-        uses: github/codeql-action/upload-sarif@v3
-        if: always()
-        with:
-          sarif_file: trivy-results.sarif
-          category: trivy
-
-      - name: Summary
-        run: |
-          {
-            echo "### Image published"
-            echo ""
-            echo "**Digest:** \`${{ steps.build.outputs.digest }}\`"
-            echo ""
-            echo "**Tags:**"
-            echo '```'
-            echo "${{ steps.meta.outputs.tags }}"
-            echo '```'
-          } >> "$GITHUB_STEP_SUMMARY"
+      - name: Verify evidence and publish exact digest
+        if: steps.candidate.outputs.done != 'true'
+        run: python3 "$RUNNER_TEMP/release-coordinator/automation.py" finish
+      - name: Record failed attempt
+        if: failure()
+        run: python3 "$RUNNER_TEMP/release-coordinator/automation.py" fail

@@ -1,0 +1,87 @@
+name: Update CLI tools
+
+on:
+  schedule:
+    - cron: '17 * * * *'
+  workflow_dispatch:
+    inputs:
+      operation:
+        description: Check updates, resume/cancel a release, or import the initial baseline
+        type: choice
+        options: [check, resume, cancel, initialize]
+        default: check
+      release_id:
+        description: Exact release tag vX.Y.Z (required except for check)
+        type: string
+      reason:
+        description: Required cancellation reason
+        type: string
+      baseline_digest:
+        description: Existing sha256 digest (initialize only)
+        type: string
+
+# Both workflows hold this lock; dispatch never waits for the publishing workflow.
+concurrency:
+  group: docker-codex-release
+  cancel-in-progress: false
+
+permissions: {}
+
+jobs:
+  update:
+    if: >-
+      github.ref == format('refs/heads/{0}', github.event.repository.default_branch) &&
+      (github.event_name == 'workflow_dispatch' || vars.AUTO_RELEASE_ENABLED == 'true')
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    permissions:
+      contents: write
+      actions: write
+      issues: write
+      packages: read
+    env:
+      GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      DEFAULT_BRANCH: ${{ github.event.repository.default_branch }}
+      OPERATION: ${{ inputs.operation || 'check' }}
+      RELEASE_ID: ${{ inputs.release_id }}
+      REASON: ${{ inputs.reason }}
+      BASELINE_DIGEST: ${{ inputs.baseline_digest }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.repository.default_branch }}
+          fetch-depth: 0
+      - uses: actions/setup-go@v5
+        if: inputs.operation == 'initialize'
+        with:
+          go-version: '1.24.x'
+          cache: false
+      - name: Install registry client
+        if: inputs.operation == 'initialize'
+        run: go install github.com/google/go-containerregistry/cmd/crane@v0.20.3
+      - name: Authenticate registry reader
+        if: inputs.operation == 'initialize'
+        run: printf '%s' "$GH_TOKEN" | crane auth login ghcr.io --username "$GITHUB_ACTOR" --password-stdin
+      - name: Inspect server policy before initial import
+        if: inputs.operation == 'initialize'
+        run: |
+          set -eu
+          gh api "repos/$GITHUB_REPOSITORY/branches/$DEFAULT_BRANCH" > "$RUNNER_TEMP/branch.json"
+          gh api "repos/$GITHUB_REPOSITORY/rules/branches/$DEFAULT_BRANCH" > "$RUNNER_TEMP/rules.json"
+          gh api "repos/$GITHUB_REPOSITORY/rules/branches/release-state" > "$RUNNER_TEMP/state-rules.json"
+          python3 - <<'PY'
+          import json, os
+          from pathlib import Path
+          root = Path(os.environ['RUNNER_TEMP'])
+          branch = json.loads((root / 'branch.json').read_text())
+          rules = json.loads((root / 'rules.json').read_text())
+          state_rules = json.loads((root / 'state-rules.json').read_text())
+          if branch.get('protected') or rules or state_rules:
+              raise SystemExit('Protected branches/rules detected. Agree on a compatible integration before enabling; no bypass is attempted.')
+          PY
+      - name: Import explicit baseline
+        if: inputs.operation == 'initialize'
+        run: python3 scripts/release/automation.py initialize
+      - name: Reconcile and dispatch
+        if: inputs.operation != 'initialize'
+        run: python3 scripts/release/automation.py control

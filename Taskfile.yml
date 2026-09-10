@@ -156,8 +156,7 @@ tasks:
             exit 1
           fi
 
-          run git push origin "$branch"
-          run git push origin "$tag"
+          run git push --atomic origin "$branch" "$tag"
         fi
 
         echo "Prepared release ${tag}"
@@ -165,7 +164,13 @@ tasks:
   lint:
     desc: Проверка Dockerfile через hadolint
     cmds:
-      - hadolint {{.DOCKERFILE}}
+      # Existing pinning/style warnings remain visible; syntax/errors block releases.
+      - hadolint --failure-threshold error {{.DOCKERFILE}}
+
+  test:
+    desc: Проверка выбора версий, состояния и восстановления релизов
+    cmds:
+      - PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
 
   build:
     desc: Локальная сборка под текущую платформу
