@@ -142,6 +142,12 @@
           "run_attempt": "1",
           "finished_at": "2026-09-10T20:05:44.279991+00:00",
           "error": "gh failed (1): gh: Not Found (HTTP 404)"
+        },
+        "34524730585:1": {
+          "status": "running",
+          "started_at": "2026-09-10T20:10:27.867005+00:00",
+          "run_id": "34524730585",
+          "run_attempt": "1"
         }
       },
       "failure_count": 3,
