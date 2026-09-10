@@ -78,14 +78,16 @@
       "attestation": null,
       "attempts": {
         "34518553427:1": {
-          "status": "running",
+          "status": "failed",
           "started_at": "2026-09-10T19:08:10.820729+00:00",
           "run_id": "34518553427",
-          "run_attempt": "1"
+          "run_attempt": "1",
+          "finished_at": "2026-09-10T19:20:55.497627+00:00",
+          "error": "Missing BuildKit provenance or SBOM"
         }
       },
-      "failure_count": 0,
-      "last_error": null,
+      "failure_count": 1,
+      "last_error": "Missing BuildKit provenance or SBOM",
       "failure_issue": null,
       "published_tags": {},
       "created_at": "2026-09-10T19:07:50.633869+00:00",
