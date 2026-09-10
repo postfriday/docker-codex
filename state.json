@@ -163,7 +163,10 @@
       "published_tags": {},
       "created_at": "2026-09-10T19:07:50.633869+00:00",
       "completed_at": null,
-      "cancellation": null
+      "cancellation": null,
+      "tag_intents": {
+        "1.0.21": "sha256:0fd8d6586cb2bbd024a7c139c6ead1d8b9af13add6a84c61d62f18bcfc15a948"
+      }
     }
   }
 }
