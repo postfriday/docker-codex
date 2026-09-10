@@ -17,7 +17,7 @@ jobs:
         run: PYTHONDONTWRITEBYTECODE=1 python3 -m unittest discover -s tests -v
       - uses: actions/setup-go@v7
         with:
-          go-version: '1.24.x'
+          go-version: '1.25.x'
           cache: false
       - name: Check workflows
         run: |

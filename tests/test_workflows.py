@@ -14,6 +14,11 @@ class WorkflowRuntimeTests(unittest.TestCase):
         self.assertNotIn("actions/checkout@v4", workflows)
         self.assertNotIn("actions/setup-go@v5", workflows)
 
+    def test_actionlint_uses_compatible_go_version(self):
+        workflow = (ROOT / ".github" / "workflows" / "release-tests.yml").read_text()
+
+        self.assertIn("go-version: '1.25.x'", workflow)
+
 
 if __name__ == "__main__":
     unittest.main()
