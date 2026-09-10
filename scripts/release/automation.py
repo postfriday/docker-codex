@@ -469,7 +469,13 @@ class Coordinator:
         if record['attestation']:
             self.verify_attestation(record)
             return True
-        existing = api(f"repos/{self.repo}/attestations/{digest}")
+        try:
+            existing = api(f"repos/{self.repo}/attestations/{digest}")
+        except RuntimeError as error:
+            # GitHub returns 404 when this valid subject has no attestations yet.
+            if 'HTTP 404' in str(error):
+                return False
+            raise
         if not isinstance(existing.get('attestations'), list):
             raise ValueError('Malformed attestation API response')
         if not existing['attestations']:

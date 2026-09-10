@@ -336,6 +336,14 @@ class TagTests(unittest.TestCase):
 
 
 class AttestationTests(unittest.TestCase):
+    @patch('automation.api', side_effect=RuntimeError('gh: Not Found (HTTP 404)'))
+    def test_missing_attestation_is_ready_for_creation(self, api):
+        c = coordinator()
+        r = active(c)
+        r['candidate_digest'] = 'sha256:candidate'
+        self.assertFalse(c.restore_attestation(r))
+        self.assertIsNone(r['attestation'])
+
     @patch('automation.api')
     def test_lost_receipt_reuses_verified_attestation(self, api):
         c = coordinator()
