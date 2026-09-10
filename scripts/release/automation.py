@@ -427,7 +427,7 @@ class Coordinator:
                 try:
                     actual = cli_version(cli, run('docker', 'run', '--rm', '--name', container,
                         '--platform', f'linux/{arch}', '--entrypoint', f'/usr/local/bin/{cli}',
-                        f'{self.image}@{digest}', '--version', timeout=180))
+                        f'{self.image}@{platform_digest}', '--version', timeout=180))
                 finally:
                     subprocess.run(['docker', 'rm', '-f', container], capture_output=True, check=False)
                 if actual != record['expected_versions'][cli]:

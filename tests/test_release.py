@@ -591,6 +591,7 @@ class CandidateChecks(unittest.TestCase):
                         self.assertEqual(args[:3], ('docker', 'run', '--rm'))
                         arch = args[args.index('--platform') + 1].split('/')[1]
                         cli = args[args.index('--entrypoint') + 1].split('/')[-1]
+                        self.assertEqual(args[-2], f'{c.image}@{r["platform_digests"][arch]}')
                         version = '9.9.9' if (arch, cli) == (failing_arch, failing_cli) else CURRENT[cli]
                         return {'codex': f'codex-cli {version}', 'opencode': version,
                                 'claude': f'{version} (Claude Code)'}[cli]
