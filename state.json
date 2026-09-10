@@ -146,7 +146,7 @@
       },
       "failure_count": 3,
       "last_error": "gh failed (1): gh: Not Found (HTTP 404)",
-      "failure_issue": null,
+      "failure_issue": 2,
       "published_tags": {},
       "created_at": "2026-09-10T19:07:50.633869+00:00",
       "completed_at": null,
