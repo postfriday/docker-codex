@@ -525,6 +525,53 @@ class CheckoutTests(unittest.TestCase):
 
 
 class CandidateChecks(unittest.TestCase):
+    def test_buildkit_slsa_v1_provenance_is_accepted(self):
+        c = coordinator()
+        r = active(c)
+        platform_digests = {
+            'amd64': 'sha256:' + '1' * 64,
+            'arm64': 'sha256:' + '2' * 64,
+        }
+        evidence_digests = {
+            platform: 'sha256:' + marker * 64
+            for platform, marker in [('amd64', '3'), ('arm64', '4')]
+        }
+        index = {'manifests': [
+            *[{'platform': {'os': 'linux', 'architecture': arch}, 'digest': digest}
+              for arch, digest in platform_digests.items()],
+            *[{'digest': evidence_digests[arch], 'annotations': {
+                'vnd.docker.reference.digest': digest,
+                'vnd.docker.reference.type': 'attestation-manifest'}}
+              for arch, digest in platform_digests.items()],
+        ]}
+
+        def command(*args, **kwargs):
+            ref = args[2]
+            if args[:2] == ('crane', 'config'):
+                arch = next(arch for arch, digest in platform_digests.items() if ref.endswith(digest))
+                return json.dumps({'os': 'linux', 'architecture': arch, 'config': {'Labels': {
+                    'org.opencontainers.image.revision': r['release_sha'],
+                    'org.opencontainers.image.version': r['image_version']}}})
+            if args[:2] == ('crane', 'manifest') and ref.endswith('sha256:index'):
+                return json.dumps(index)
+            if args[:2] == ('crane', 'manifest'):
+                arch = next(arch for arch, digest in evidence_digests.items() if ref.endswith(digest))
+                return json.dumps({'layers': [
+                    {'digest': f'sha256:{arch}-sbom'},
+                    {'digest': f'sha256:{arch}-provenance'},
+                ]})
+            if args[:2] == ('crane', 'blob'):
+                arch, kind = ref.removeprefix(c.image + '@sha256:').split('-', 1)
+                predicate = ('https://spdx.dev/Document' if kind == 'sbom'
+                             else 'https://slsa.dev/provenance/v1')
+                return json.dumps({'subject': [{'digest': {
+                    'sha256': platform_digests[arch].removeprefix('sha256:')}}],
+                    'predicateType': predicate})
+            raise AssertionError(args)
+
+        with patch('automation.run', side_effect=command):
+            self.assertEqual(c.inspect_candidate(r, 'sha256:index'), platform_digests)
+
     @patch.dict(os.environ, ENV)
     def test_each_of_six_checks_blocks_on_wrong_version(self):
         for failing_arch in ['amd64', 'arm64']:

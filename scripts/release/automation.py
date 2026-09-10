@@ -18,6 +18,11 @@ from datetime import datetime, timezone
 from model import (TOOLS, TERMINAL, cli_version, composition, release_id, replace_versions,
                    select, semver, tag_plan, validate_state, versions, STABLE)
 
+BUILD_PROVENANCE_TYPES = {
+    'https://slsa.dev/provenance/v0.2',
+    'https://slsa.dev/provenance/v1',
+}
+
 
 def run(*args, cwd=None, input=None, timeout=300, live=False):
     result = subprocess.run(args, cwd=cwd, input=input, text=True, capture_output=not live,
@@ -183,7 +188,8 @@ class Coordinator:
                                    for s in subjects):
                             raise ValueError('Build evidence subject mismatch')
                         predicates.add(statement.get('predicateType'))
-                if not {'https://slsa.dev/provenance/v0.2', 'https://spdx.dev/Document'} <= predicates:
+                if ('https://spdx.dev/Document' not in predicates
+                        or predicates.isdisjoint(BUILD_PROVENANCE_TYPES)):
                     raise ValueError('Missing BuildKit provenance or SBOM')
         return platforms
 
