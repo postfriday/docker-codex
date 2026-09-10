@@ -46,6 +46,41 @@
       "created_at": "2026-09-10T15:54:34.660106+00:00",
       "completed_at": null,
       "cancellation": null
+    },
+    "v1.0.21": {
+      "schema_version": 1,
+      "release_id": "v1.0.21",
+      "image_version": "1.0.21",
+      "git_tag": "v1.0.21",
+      "source_sha": "e7bbb09908fd2a0f254493e95b987355aa0b139d",
+      "release_sha": "d88511ab1f0a627be4f7702587b68da25fae9ce3",
+      "composition_id": "5222855eeec5b6abe3cf6b6814aa64baf934643dbc64b5687ae1f23049e1559d",
+      "origin": "npm",
+      "previous_versions": {
+        "codex": "0.153.4",
+        "opencode": "1.17.9",
+        "claude": "2.1.187"
+      },
+      "expected_versions": {
+        "codex": "0.154.0",
+        "opencode": "1.18.30",
+        "claude": "2.1.268"
+      },
+      "status": "reserved",
+      "candidate_tag": "candidate-v1.0.21",
+      "candidate_digest": null,
+      "platform_digests": {},
+      "checks": {},
+      "reports": {},
+      "attestation": null,
+      "attempts": {},
+      "failure_count": 0,
+      "last_error": null,
+      "failure_issue": null,
+      "published_tags": {},
+      "created_at": "2026-09-10T19:07:50.633869+00:00",
+      "completed_at": null,
+      "cancellation": null
     }
   }
 }
