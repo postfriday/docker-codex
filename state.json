@@ -279,7 +279,8 @@
       "cancellation": null,
       "tag_intents": {
         "1.0.22": "sha256:af685f790fd931cf0773ea137d616225423fbc5c1424d681ee9cd4507b2f54e3",
-        "f51f6d8": "sha256:af685f790fd931cf0773ea137d616225423fbc5c1424d681ee9cd4507b2f54e3"
+        "f51f6d8": "sha256:af685f790fd931cf0773ea137d616225423fbc5c1424d681ee9cd4507b2f54e3",
+        "f51f6d83bd7c58802bb9e16922c87a9d5358b212": "sha256:af685f790fd931cf0773ea137d616225423fbc5c1424d681ee9cd4507b2f54e3"
       }
     }
   }
