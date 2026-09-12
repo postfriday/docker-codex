@@ -385,7 +385,8 @@
         "dd79ec9": "sha256:7fc84f7a6e0448767b5f6c64946ddab870fd080c65771be42b7d86e64b6fe7eb",
         "dd79ec971fbf8cc0b31e0a556d21ceee5ac25e25": "sha256:7fc84f7a6e0448767b5f6c64946ddab870fd080c65771be42b7d86e64b6fe7eb",
         "1.0": "sha256:7fc84f7a6e0448767b5f6c64946ddab870fd080c65771be42b7d86e64b6fe7eb",
-        "1": "sha256:7fc84f7a6e0448767b5f6c64946ddab870fd080c65771be42b7d86e64b6fe7eb"
+        "1": "sha256:7fc84f7a6e0448767b5f6c64946ddab870fd080c65771be42b7d86e64b6fe7eb",
+        "latest": "sha256:7fc84f7a6e0448767b5f6c64946ddab870fd080c65771be42b7d86e64b6fe7eb"
       },
       "created_at": "2026-09-12T19:22:55.170962+00:00",
       "completed_at": null,
