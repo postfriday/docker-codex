@@ -574,6 +574,11 @@
           "sha256": "de80ecf407416bdd2bd17b47c46ed43d12eecc6badd65f47e238430b0b36c6a6",
           "digest": "sha256:ed2be461c964540e0f515cf5d052836066ff8d859dcafff80d01cde1237d79ec",
           "asset": "https://github.com/postfriday/docker-codex/releases/download/untagged-ff094cfb2319fce7f2ae/trivy-amd64.sarif"
+        },
+        "trivy-arm64.sarif": {
+          "sha256": "29d1120b5a6e799c429589931877bc0cadb9902f5fd588a7d414b3b01c032032",
+          "digest": "sha256:ed2be461c964540e0f515cf5d052836066ff8d859dcafff80d01cde1237d79ec",
+          "asset": "https://github.com/postfriday/docker-codex/releases/download/untagged-ff094cfb2319fce7f2ae/trivy-arm64.sarif"
         }
       },
       "attestation": null,
