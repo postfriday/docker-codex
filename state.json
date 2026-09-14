@@ -447,6 +447,11 @@
           "digest": "sha256:8db404cfd5dba7a48bd27f9b20a72843999be54258fbcec7667c0cf27367bed0",
           "version": "0.154.0",
           "at": "2026-09-14T19:37:32.551323+00:00"
+        },
+        "arm64:opencode": {
+          "digest": "sha256:8db404cfd5dba7a48bd27f9b20a72843999be54258fbcec7667c0cf27367bed0",
+          "version": "1.18.31",
+          "at": "2026-09-14T19:37:42.201072+00:00"
         }
       },
       "reports": {
