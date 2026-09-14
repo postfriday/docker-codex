@@ -420,7 +420,7 @@
         "opencode": "1.18.31",
         "claude": "2.1.270"
       },
-      "status": "candidate_saved",
+      "status": "verified",
       "candidate_tag": "candidate-v1.0.24",
       "candidate_digest": "sha256:8db404cfd5dba7a48bd27f9b20a72843999be54258fbcec7667c0cf27367bed0",
       "platform_digests": {
