@@ -1152,7 +1152,8 @@
       "failure_issue": null,
       "published_tags": {
         "1.0.30": "sha256:4dadbf11003380c6e39c877892a0809e0d74af7c3b25208c8dc5994a3cd33023",
-        "836980e": "sha256:4dadbf11003380c6e39c877892a0809e0d74af7c3b25208c8dc5994a3cd33023"
+        "836980e": "sha256:4dadbf11003380c6e39c877892a0809e0d74af7c3b25208c8dc5994a3cd33023",
+        "836980e4a47d06d141909365aa528e3c55ebc46f": "sha256:4dadbf11003380c6e39c877892a0809e0d74af7c3b25208c8dc5994a3cd33023"
       },
       "created_at": "2026-09-18T00:20:59.759835+00:00",
       "completed_at": null,
