@@ -1485,7 +1485,8 @@
         "7dfc502": "sha256:ea140ea33d904b81b411d02b13c2c99a7ec6c6acb3cab5b0b7a83bec613efbbd",
         "7dfc5023134957a8e2825d79032c9d9a13cc3862": "sha256:ea140ea33d904b81b411d02b13c2c99a7ec6c6acb3cab5b0b7a83bec613efbbd",
         "1.0": "sha256:ea140ea33d904b81b411d02b13c2c99a7ec6c6acb3cab5b0b7a83bec613efbbd",
-        "1": "sha256:ea140ea33d904b81b411d02b13c2c99a7ec6c6acb3cab5b0b7a83bec613efbbd"
+        "1": "sha256:ea140ea33d904b81b411d02b13c2c99a7ec6c6acb3cab5b0b7a83bec613efbbd",
+        "latest": "sha256:ea140ea33d904b81b411d02b13c2c99a7ec6c6acb3cab5b0b7a83bec613efbbd"
       },
       "created_at": "2026-09-18T21:42:14.588600+00:00",
       "completed_at": null,
