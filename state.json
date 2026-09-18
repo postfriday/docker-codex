@@ -1370,7 +1370,9 @@
       "failure_count": 0,
       "last_error": null,
       "failure_issue": null,
-      "published_tags": {},
+      "published_tags": {
+        "1.0.32": "sha256:c1a209bf0f66e162f2a86f8f7d74126236cfad38621c5a50fa80762d296e9e84"
+      },
       "created_at": "2026-09-18T18:29:50.032883+00:00",
       "completed_at": null,
       "cancellation": null,
