@@ -1520,7 +1520,7 @@
         "opencode": "1.18.31",
         "claude": "2.1.278"
       },
-      "status": "candidate_saved",
+      "status": "verified",
       "candidate_tag": "candidate-v1.0.34",
       "candidate_digest": "sha256:29b9183b73a8b5c5e31cc6763e2f00b96e4ddcd70d1368e549ded2cd1d4be6ad",
       "platform_digests": {
