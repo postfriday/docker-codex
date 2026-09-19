@@ -1527,7 +1527,14 @@
       "checks": {},
       "reports": {},
       "attestation": null,
-      "attempts": {},
+      "attempts": {
+        "35425175058:1": {
+          "status": "running",
+          "started_at": "2026-09-19T05:54:26.934092+00:00",
+          "run_id": "35425175058",
+          "run_attempt": "1"
+        }
+      },
       "failure_count": 0,
       "last_error": null,
       "failure_issue": null,
