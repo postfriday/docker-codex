@@ -1542,6 +1542,11 @@
           "digest": "sha256:29b9183b73a8b5c5e31cc6763e2f00b96e4ddcd70d1368e549ded2cd1d4be6ad",
           "version": "2.1.278",
           "at": "2026-09-19T06:08:56.389527+00:00"
+        },
+        "arm64:codex": {
+          "digest": "sha256:29b9183b73a8b5c5e31cc6763e2f00b96e4ddcd70d1368e549ded2cd1d4be6ad",
+          "version": "0.155.1",
+          "at": "2026-09-19T06:10:34.405510+00:00"
         }
       },
       "reports": {
