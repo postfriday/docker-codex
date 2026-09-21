@@ -1707,7 +1707,8 @@
       "completed_at": null,
       "cancellation": null,
       "tag_intents": {
-        "1.0.35": "sha256:c54bd0c5ecf65a49e59224a7d779377e879773c27abad42fb5d9db69863f5255"
+        "1.0.35": "sha256:c54bd0c5ecf65a49e59224a7d779377e879773c27abad42fb5d9db69863f5255",
+        "96bfda9": "sha256:c54bd0c5ecf65a49e59224a7d779377e879773c27abad42fb5d9db69863f5255"
       }
     }
   }
