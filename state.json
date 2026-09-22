@@ -1882,6 +1882,11 @@
           "digest": "sha256:796abac209755e555def85d51c6fd49dca4b0b4e891b9c7b85df3ce6018bec2f",
           "version": "1.18.32",
           "at": "2026-09-22T22:25:50.266808+00:00"
+        },
+        "arm64:claude": {
+          "digest": "sha256:796abac209755e555def85d51c6fd49dca4b0b4e891b9c7b85df3ce6018bec2f",
+          "version": "2.1.280",
+          "at": "2026-09-22T22:25:52.236749+00:00"
         }
       },
       "reports": {
