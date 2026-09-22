@@ -1747,7 +1747,13 @@
         "amd64": "sha256:a12b821a2f2bc88aa4461ac11e96051805e679eb622bca6c3e4af4a2ef48ebee",
         "arm64": "sha256:f23744bc2324459eda3de9bb37918944a3cd437df2f31eca75b91f30a1dee3b4"
       },
-      "checks": {},
+      "checks": {
+        "amd64:codex": {
+          "digest": "sha256:30f569ee56acc19d43ce67f2185056f6e1991165fafd579ee8144dbfafb6f658",
+          "version": "0.155.1",
+          "at": "2026-09-22T19:10:36.893262+00:00"
+        }
+      },
       "reports": {},
       "attestation": null,
       "attempts": {
