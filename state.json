@@ -2010,7 +2010,8 @@
         "trivy-arm64.sarif": {
           "sha256": "31b3a66623a92314d5e59d7b984b7fb8ddc9ae8f9daf6066537b1b69e8b7754b",
           "digest": "sha256:11d264ce1692ab4fce1d1df3cbc4aa9404be24ea89289ce49557e045ebc1b02f",
-          "asset": "https://github.com/postfriday/docker-codex/releases/download/untagged-1e3ae684381cb41c758c/trivy-arm64.sarif"
+          "asset": "https://github.com/postfriday/docker-codex/releases/download/untagged-1e3ae684381cb41c758c/trivy-arm64.sarif",
+          "sarif_id": "6c493248-b716-11f1-9ee9-baab194b5bd8"
         }
       },
       "attestation": {
