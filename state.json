@@ -1987,6 +1987,11 @@
           "digest": "sha256:11d264ce1692ab4fce1d1df3cbc4aa9404be24ea89289ce49557e045ebc1b02f",
           "version": "0.156.1",
           "at": "2026-09-23T06:15:51.159327+00:00"
+        },
+        "arm64:opencode": {
+          "digest": "sha256:11d264ce1692ab4fce1d1df3cbc4aa9404be24ea89289ce49557e045ebc1b02f",
+          "version": "1.18.32",
+          "at": "2026-09-23T06:16:03.753389+00:00"
         }
       },
       "reports": {
