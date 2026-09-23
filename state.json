@@ -1960,7 +1960,7 @@
         "opencode": "1.18.32",
         "claude": "2.1.280"
       },
-      "status": "candidate_saved",
+      "status": "verified",
       "candidate_tag": "candidate-v1.0.38",
       "candidate_digest": "sha256:11d264ce1692ab4fce1d1df3cbc4aa9404be24ea89289ce49557e045ebc1b02f",
       "platform_digests": {
