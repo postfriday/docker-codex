@@ -2113,7 +2113,8 @@
         "trivy-amd64.sarif": {
           "sha256": "37919152f776df9393782360b0ed15f272e591c634a202be52a991f501c490df",
           "digest": "sha256:286061b0ef28c5f87013cb7fc93413639752d6d0b40f8220b0f4f41e0fc00558",
-          "asset": "https://github.com/postfriday/docker-codex/releases/download/untagged-da32525c32a04222048f/trivy-amd64.sarif"
+          "asset": "https://github.com/postfriday/docker-codex/releases/download/untagged-da32525c32a04222048f/trivy-amd64.sarif",
+          "sarif_id": "e4d9d604-b78e-11f1-889b-d9042229aa7a"
         },
         "trivy-arm64.sarif": {
           "sha256": "781370173bb728b4c506333ae9dfa9c4c076e2e556f95e8dc22353f4fa64eb3d",
