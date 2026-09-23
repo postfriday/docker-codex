@@ -1977,6 +1977,11 @@
           "digest": "sha256:11d264ce1692ab4fce1d1df3cbc4aa9404be24ea89289ce49557e045ebc1b02f",
           "version": "1.18.32",
           "at": "2026-09-23T06:14:09.439133+00:00"
+        },
+        "amd64:claude": {
+          "digest": "sha256:11d264ce1692ab4fce1d1df3cbc4aa9404be24ea89289ce49557e045ebc1b02f",
+          "version": "2.1.280",
+          "at": "2026-09-23T06:14:11.163742+00:00"
         }
       },
       "reports": {},
