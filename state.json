@@ -2334,6 +2334,11 @@
           "sha256": "dfb1b7f4a9dc149163e9b432bc1b5a2ac202795106e77a58b9bb415d3e9e8205",
           "digest": "sha256:0d7ef39851c31f9a5397641b68a636153683aa5c9314056b1a249b3c3f432f0b",
           "asset": "https://github.com/postfriday/docker-codex/releases/download/untagged-9d5059ad5793c025888e/trivy-amd64.sarif"
+        },
+        "trivy-arm64.sarif": {
+          "sha256": "0a0fd53bd6d313f569b906746cc2f061f65d4ad18ddaeafcf97ade0c4f1b68a3",
+          "digest": "sha256:0d7ef39851c31f9a5397641b68a636153683aa5c9314056b1a249b3c3f432f0b",
+          "asset": "https://github.com/postfriday/docker-codex/releases/download/untagged-9d5059ad5793c025888e/trivy-arm64.sarif"
         }
       },
       "attestation": null,
