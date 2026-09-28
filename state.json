@@ -2691,7 +2691,8 @@
       "last_error": null,
       "failure_issue": null,
       "published_tags": {
-        "1.0.44": "sha256:1b5fadc381ab715951f8c962d64b7394be21db515409a5a055d147321ae13580"
+        "1.0.44": "sha256:1b5fadc381ab715951f8c962d64b7394be21db515409a5a055d147321ae13580",
+        "6a4855e": "sha256:1b5fadc381ab715951f8c962d64b7394be21db515409a5a055d147321ae13580"
       },
       "created_at": "2026-09-28T06:55:49.231781+00:00",
       "completed_at": null,
