@@ -2742,6 +2742,11 @@
           "digest": "sha256:38417b7193ade23c819bade860d60df780038dda1949ecff88ad42c9b790c49d",
           "version": "0.158.0",
           "at": "2026-09-28T22:14:41.561538+00:00"
+        },
+        "amd64:opencode": {
+          "digest": "sha256:38417b7193ade23c819bade860d60df780038dda1949ecff88ad42c9b790c49d",
+          "version": "1.18.33",
+          "at": "2026-09-28T22:14:43.642859+00:00"
         }
       },
       "reports": {},
