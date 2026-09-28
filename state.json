@@ -2600,6 +2600,41 @@
         "1": "sha256:3c4bd3fc6dc97ec06c3f6648ce943d48e7de09864b56ea6dbe29eb5328ab7976",
         "latest": "sha256:3c4bd3fc6dc97ec06c3f6648ce943d48e7de09864b56ea6dbe29eb5328ab7976"
       }
+    },
+    "v1.0.44": {
+      "schema_version": 1,
+      "release_id": "v1.0.44",
+      "image_version": "1.0.44",
+      "git_tag": "v1.0.44",
+      "source_sha": "be79d03affa1602f956c724e8a0f54c8773c2cf8",
+      "release_sha": "6a4855eacb4de67a733f075328dcd11fba35356c",
+      "composition_id": "be54f6f84ae580a9f8a537cb0aea1d989d40800e61a8756a67066a68baaa8e4f",
+      "origin": "npm",
+      "previous_versions": {
+        "codex": "0.157.1",
+        "opencode": "1.18.32",
+        "claude": "2.1.283"
+      },
+      "expected_versions": {
+        "codex": "0.158.0",
+        "opencode": "1.18.33",
+        "claude": "2.1.283"
+      },
+      "status": "reserved",
+      "candidate_tag": "candidate-v1.0.44",
+      "candidate_digest": null,
+      "platform_digests": {},
+      "checks": {},
+      "reports": {},
+      "attestation": null,
+      "attempts": {},
+      "failure_count": 0,
+      "last_error": null,
+      "failure_issue": null,
+      "published_tags": {},
+      "created_at": "2026-09-28T06:55:49.231781+00:00",
+      "completed_at": null,
+      "cancellation": null
     }
   }
 }
