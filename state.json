@@ -2780,7 +2780,8 @@
         "trivy-arm64.sarif": {
           "sha256": "5903ef25cde41af61adcc4385769cb9f1c170fc3a29cd70a7d5d5617f03b6c63",
           "digest": "sha256:38417b7193ade23c819bade860d60df780038dda1949ecff88ad42c9b790c49d",
-          "asset": "https://github.com/postfriday/docker-codex/releases/download/untagged-43054c3933bb751d4de7/trivy-arm64.sarif"
+          "asset": "https://github.com/postfriday/docker-codex/releases/download/untagged-43054c3933bb751d4de7/trivy-arm64.sarif",
+          "sarif_id": "766fb6ac-bb8a-11f1-855d-7c0c6f9dd5ae"
         }
       },
       "attestation": {
