@@ -2840,10 +2840,13 @@
         "opencode": "1.18.33",
         "claude": "2.1.284"
       },
-      "status": "reserved",
+      "status": "candidate_saved",
       "candidate_tag": "candidate-v1.0.46",
-      "candidate_digest": null,
-      "platform_digests": {},
+      "candidate_digest": "sha256:4ee8e83ddd989bf977fdfb36db433fb23eebc0e38412056407c0dfd4b45f5238",
+      "platform_digests": {
+        "amd64": "sha256:bbce65161db15deae5f744d83f1bd2618203ec9b32be24d96c26f74a51589497",
+        "arm64": "sha256:7471453cfc58df37e2d9bd4120ed96e2caf3597af37887df2a545590038d8993"
+      },
       "checks": {},
       "reports": {},
       "attestation": null,
