@@ -2857,6 +2857,11 @@
           "digest": "sha256:4ee8e83ddd989bf977fdfb36db433fb23eebc0e38412056407c0dfd4b45f5238",
           "version": "1.18.33",
           "at": "2026-09-29T08:47:21.873734+00:00"
+        },
+        "amd64:claude": {
+          "digest": "sha256:4ee8e83ddd989bf977fdfb36db433fb23eebc0e38412056407c0dfd4b45f5238",
+          "version": "2.1.284",
+          "at": "2026-09-29T15:54:30.849550+00:00"
         }
       },
       "reports": {},
