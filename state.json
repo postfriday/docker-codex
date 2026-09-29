@@ -2869,6 +2869,12 @@
           "run_attempt": "1",
           "finished_at": "2026-09-29T08:47:32.124940+00:00",
           "error": "git failed (1): To https://github.com/postfriday/docker-codex\n ! [remote rejected] HEAD -> release-state (failed)\nerror: failed to push some refs to 'https://github.com/postfriday/docker-codex'"
+        },
+        "36593581493:1": {
+          "status": "running",
+          "started_at": "2026-09-29T15:53:15.531805+00:00",
+          "run_id": "36593581493",
+          "run_attempt": "1"
         }
       },
       "failure_count": 1,
