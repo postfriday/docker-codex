@@ -2921,7 +2921,10 @@
       "published_tags": {},
       "created_at": "2026-09-29T08:32:30.463730+00:00",
       "completed_at": null,
-      "cancellation": null
+      "cancellation": null,
+      "tag_intents": {
+        "1.0.46": "sha256:4ee8e83ddd989bf977fdfb36db433fb23eebc0e38412056407c0dfd4b45f5238"
+      }
     }
   }
 }
