@@ -3068,10 +3068,13 @@
         "opencode": "1.18.33",
         "claude": "2.1.285"
       },
-      "status": "reserved",
+      "status": "candidate_saved",
       "candidate_tag": "candidate-v1.0.48",
-      "candidate_digest": null,
-      "platform_digests": {},
+      "candidate_digest": "sha256:723bde1564b5f8c3acbc240291e9e8d2cc65ab54b6da66bcaf856e86aa0f28df",
+      "platform_digests": {
+        "amd64": "sha256:be52fbeff911f1e49a04644f9bb6ed765292889227d383195a2527058d6ae4ce",
+        "arm64": "sha256:7cf18ee85cfe3a245c89516a2c883a2a1b0c0a56d41217d7599be28253d2f1dd"
+      },
       "checks": {},
       "reports": {},
       "attestation": null,
