@@ -3080,6 +3080,11 @@
           "digest": "sha256:723bde1564b5f8c3acbc240291e9e8d2cc65ab54b6da66bcaf856e86aa0f28df",
           "version": "0.159.2",
           "at": "2026-09-30T00:42:42.974068+00:00"
+        },
+        "amd64:opencode": {
+          "digest": "sha256:723bde1564b5f8c3acbc240291e9e8d2cc65ab54b6da66bcaf856e86aa0f28df",
+          "version": "1.18.33",
+          "at": "2026-09-30T00:42:44.888195+00:00"
         }
       },
       "reports": {},
