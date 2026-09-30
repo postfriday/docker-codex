@@ -3210,6 +3210,11 @@
           "digest": "sha256:25f5c44fea9bd794ed21c3dd746173ae1e913043408b73c94becf7b06e405aeb",
           "version": "1.18.33",
           "at": "2026-09-30T19:38:31.146103+00:00"
+        },
+        "arm64:claude": {
+          "digest": "sha256:25f5c44fea9bd794ed21c3dd746173ae1e913043408b73c94becf7b06e405aeb",
+          "version": "2.1.286",
+          "at": "2026-09-30T19:38:33.179554+00:00"
         }
       },
       "reports": {
