@@ -3178,10 +3178,13 @@
         "opencode": "1.18.33",
         "claude": "2.1.286"
       },
-      "status": "reserved",
+      "status": "candidate_saved",
       "candidate_tag": "candidate-v1.0.49",
-      "candidate_digest": null,
-      "platform_digests": {},
+      "candidate_digest": "sha256:25f5c44fea9bd794ed21c3dd746173ae1e913043408b73c94becf7b06e405aeb",
+      "platform_digests": {
+        "amd64": "sha256:cc960db46d6bf53d7441774f7094ca0a3a34d264a354c210ad26e52c5c93c26c",
+        "arm64": "sha256:dfed9551a5b64acd00c7bb44d63a358064a714a289e377ef5ad4441a32aae895"
+      },
       "checks": {},
       "reports": {},
       "attestation": null,
