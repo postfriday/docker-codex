@@ -3251,7 +3251,8 @@
       "published_tags": {
         "1.0.49": "sha256:25f5c44fea9bd794ed21c3dd746173ae1e913043408b73c94becf7b06e405aeb",
         "8338320": "sha256:25f5c44fea9bd794ed21c3dd746173ae1e913043408b73c94becf7b06e405aeb",
-        "8338320a88d05acdbcf5bc14ce08dc73ca6c0f46": "sha256:25f5c44fea9bd794ed21c3dd746173ae1e913043408b73c94becf7b06e405aeb"
+        "8338320a88d05acdbcf5bc14ce08dc73ca6c0f46": "sha256:25f5c44fea9bd794ed21c3dd746173ae1e913043408b73c94becf7b06e405aeb",
+        "1.0": "sha256:25f5c44fea9bd794ed21c3dd746173ae1e913043408b73c94becf7b06e405aeb"
       },
       "created_at": "2026-09-30T19:21:28.198143+00:00",
       "completed_at": null,
