@@ -3090,6 +3090,11 @@
           "digest": "sha256:723bde1564b5f8c3acbc240291e9e8d2cc65ab54b6da66bcaf856e86aa0f28df",
           "version": "2.1.285",
           "at": "2026-09-30T00:42:46.446401+00:00"
+        },
+        "arm64:codex": {
+          "digest": "sha256:723bde1564b5f8c3acbc240291e9e8d2cc65ab54b6da66bcaf856e86aa0f28df",
+          "version": "0.159.2",
+          "at": "2026-09-30T00:44:14.942949+00:00"
         }
       },
       "reports": {
