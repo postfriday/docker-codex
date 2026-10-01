@@ -3469,7 +3469,8 @@
       "last_error": null,
       "failure_issue": null,
       "published_tags": {
-        "1.0.51": "sha256:c6a3c6004018a0f70d253ffd811ad470c6f199467834fb9f5246938135d61c44"
+        "1.0.51": "sha256:c6a3c6004018a0f70d253ffd811ad470c6f199467834fb9f5246938135d61c44",
+        "0901394": "sha256:c6a3c6004018a0f70d253ffd811ad470c6f199467834fb9f5246938135d61c44"
       },
       "created_at": "2026-10-01T19:32:16.391796+00:00",
       "completed_at": null,
