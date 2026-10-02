@@ -3508,7 +3508,7 @@
         "opencode": "1.18.34",
         "claude": "2.1.287"
       },
-      "status": "publishing",
+      "status": "completed",
       "candidate_tag": "candidate-v1.0.52",
       "candidate_digest": "sha256:893ef8aac061c65cb65f0a06a6f02bb85a08825a21edb7943a38faf37e2054bc",
       "platform_digests": {
@@ -3577,14 +3577,15 @@
           "error": "git failed (1): remote: fatal error in commit_refs        \nTo https://github.com/postfriday/docker-codex\n ! [remote rejected] HEAD -> release-state (failure)\nerror: failed to push some refs to 'https://github.com/postfriday/docker-codex'"
         },
         "36969884471:1": {
-          "status": "running",
+          "status": "completed",
           "started_at": "2026-10-02T05:39:16.211835+00:00",
           "run_id": "36969884471",
-          "run_attempt": "1"
+          "run_attempt": "1",
+          "finished_at": "2026-10-02T05:40:36.557895+00:00"
         }
       },
       "failure_count": 1,
-      "last_error": "git failed (1): remote: fatal error in commit_refs        \nTo https://github.com/postfriday/docker-codex\n ! [remote rejected] HEAD -> release-state (failure)\nerror: failed to push some refs to 'https://github.com/postfriday/docker-codex'",
+      "last_error": null,
       "failure_issue": null,
       "published_tags": {
         "1.0.52": "sha256:893ef8aac061c65cb65f0a06a6f02bb85a08825a21edb7943a38faf37e2054bc",
@@ -3595,7 +3596,7 @@
         "latest": "sha256:893ef8aac061c65cb65f0a06a6f02bb85a08825a21edb7943a38faf37e2054bc"
       },
       "created_at": "2026-10-01T23:53:23.621728+00:00",
-      "completed_at": null,
+      "completed_at": "2026-10-02T05:40:36.557873+00:00",
       "cancellation": null,
       "tag_intents": {
         "1.0.52": "sha256:893ef8aac061c65cb65f0a06a6f02bb85a08825a21edb7943a38faf37e2054bc",
