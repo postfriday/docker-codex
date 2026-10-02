@@ -3699,7 +3699,10 @@
       "published_tags": {},
       "created_at": "2026-10-02T22:58:16.951872+00:00",
       "completed_at": null,
-      "cancellation": null
+      "cancellation": null,
+      "tag_intents": {
+        "1.0.53": "sha256:93f0ee2cdbeeec25e9f64af8fe68b9b72faeee241fe74fc67fb89c2b33433e0e"
+      }
     }
   }
 }
