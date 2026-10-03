@@ -3736,10 +3736,13 @@
         "opencode": "1.18.34",
         "claude": "2.1.289"
       },
-      "status": "reserved",
+      "status": "candidate_saved",
       "candidate_tag": "candidate-v1.0.54",
-      "candidate_digest": null,
-      "platform_digests": {},
+      "candidate_digest": "sha256:a125e6a4c19c0f8901e05ad5db7fe720613155c0fd559aee1b322640c310ccc1",
+      "platform_digests": {
+        "amd64": "sha256:1b0595068d79e05d8d6e5f8e51fa81d9bc513f97d675875c428f309137adf9ab",
+        "arm64": "sha256:92e88d9af032bf4c64714c80c8c5eb32b17875297968f2015cefd59a3b6d9ada"
+      },
       "checks": {},
       "reports": {},
       "attestation": null,
