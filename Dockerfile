@@ -1,8 +1,8 @@
 FROM node:24-slim
 
-ARG CODEX_VERSION=0.160.0
+ARG CODEX_VERSION=0.160.1
 ARG OPENCODE_VERSION=1.18.34
-ARG CLAUDE_CODE_VERSION=2.1.289
+ARG CLAUDE_CODE_VERSION=2.1.290
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
