@@ -3846,7 +3846,7 @@
         "opencode": "1.18.34",
         "claude": "2.1.290"
       },
-      "status": "publishing",
+      "status": "completed",
       "candidate_tag": "candidate-v1.0.55",
       "candidate_digest": "sha256:7c1de8425b79d7ebf0ce5ddb11a2449785d6c253de5992c8676cdad106c8572c",
       "platform_digests": {
@@ -3907,10 +3907,11 @@
       },
       "attempts": {
         "37383754144:1": {
-          "status": "running",
+          "status": "completed",
           "started_at": "2026-10-05T22:38:40.365678+00:00",
           "run_id": "37383754144",
-          "run_attempt": "1"
+          "run_attempt": "1",
+          "finished_at": "2026-10-05T22:56:20.407474+00:00"
         }
       },
       "failure_count": 0,
@@ -3925,7 +3926,7 @@
         "latest": "sha256:7c1de8425b79d7ebf0ce5ddb11a2449785d6c253de5992c8676cdad106c8572c"
       },
       "created_at": "2026-10-05T22:38:24.380654+00:00",
-      "completed_at": null,
+      "completed_at": "2026-10-05T22:56:20.407446+00:00",
       "cancellation": null,
       "tag_intents": {
         "1.0.55": "sha256:7c1de8425b79d7ebf0ce5ddb11a2449785d6c253de5992c8676cdad106c8572c",
