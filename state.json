@@ -3853,7 +3853,13 @@
         "amd64": "sha256:aff8ddcc0eb9a1a19de06978268fff7a569887962e12abfd3a5869b5b94ba715",
         "arm64": "sha256:eb4141e54f7af6688d08b61bbbf42f641a44e8ae5010bfe13a8e14434c306fe9"
       },
-      "checks": {},
+      "checks": {
+        "amd64:codex": {
+          "digest": "sha256:7c1de8425b79d7ebf0ce5ddb11a2449785d6c253de5992c8676cdad106c8572c",
+          "version": "0.160.1",
+          "at": "2026-10-05T22:52:36.939213+00:00"
+        }
+      },
       "reports": {},
       "attestation": null,
       "attempts": {
