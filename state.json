@@ -4029,7 +4029,8 @@
       "published_tags": {
         "1.0.56": "sha256:08fb6f32eb916eacedaf58841ef412f9ae8ea83fb36ebbf216270270f03a0c02",
         "d0908e4": "sha256:08fb6f32eb916eacedaf58841ef412f9ae8ea83fb36ebbf216270270f03a0c02",
-        "d0908e42a965a26634336b0a7409c040ccd1fb5d": "sha256:08fb6f32eb916eacedaf58841ef412f9ae8ea83fb36ebbf216270270f03a0c02"
+        "d0908e42a965a26634336b0a7409c040ccd1fb5d": "sha256:08fb6f32eb916eacedaf58841ef412f9ae8ea83fb36ebbf216270270f03a0c02",
+        "1.0": "sha256:08fb6f32eb916eacedaf58841ef412f9ae8ea83fb36ebbf216270270f03a0c02"
       },
       "created_at": "2026-10-06T10:19:56.113217+00:00",
       "completed_at": null,
