@@ -3963,7 +3963,14 @@
       "checks": {},
       "reports": {},
       "attestation": null,
-      "attempts": {},
+      "attempts": {
+        "37449071152:1": {
+          "status": "running",
+          "started_at": "2026-10-06T10:20:10.604143+00:00",
+          "run_id": "37449071152",
+          "run_attempt": "1"
+        }
+      },
       "failure_count": 0,
       "last_error": null,
       "failure_issue": null,
