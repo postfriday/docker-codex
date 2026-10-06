@@ -4033,7 +4033,8 @@
       "completed_at": null,
       "cancellation": null,
       "tag_intents": {
-        "1.0.56": "sha256:08fb6f32eb916eacedaf58841ef412f9ae8ea83fb36ebbf216270270f03a0c02"
+        "1.0.56": "sha256:08fb6f32eb916eacedaf58841ef412f9ae8ea83fb36ebbf216270270f03a0c02",
+        "d0908e4": "sha256:08fb6f32eb916eacedaf58841ef412f9ae8ea83fb36ebbf216270270f03a0c02"
       }
     }
   }
