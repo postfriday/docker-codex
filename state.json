@@ -4403,7 +4403,14 @@
       "checks": {},
       "reports": {},
       "attestation": null,
-      "attempts": {},
+      "attempts": {
+        "37693184409:1": {
+          "status": "running",
+          "started_at": "2026-10-07T21:59:39.995539+00:00",
+          "run_id": "37693184409",
+          "run_attempt": "1"
+        }
+      },
       "failure_count": 0,
       "last_error": null,
       "failure_issue": null,
