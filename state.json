@@ -4469,7 +4469,10 @@
       "published_tags": {},
       "created_at": "2026-10-07T21:59:18.847601+00:00",
       "completed_at": null,
-      "cancellation": null
+      "cancellation": null,
+      "tag_intents": {
+        "1.0.60": "sha256:b42030ac5461f14add869ceb0ed6601d3f806a8b1c6fa556158f1c9eb9e9cc25"
+      }
     }
   }
 }
