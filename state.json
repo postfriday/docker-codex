@@ -4413,6 +4413,11 @@
           "digest": "sha256:b42030ac5461f14add869ceb0ed6601d3f806a8b1c6fa556158f1c9eb9e9cc25",
           "version": "1.18.35",
           "at": "2026-10-07T22:13:46.169756+00:00"
+        },
+        "amd64:claude": {
+          "digest": "sha256:b42030ac5461f14add869ceb0ed6601d3f806a8b1c6fa556158f1c9eb9e9cc25",
+          "version": "2.1.293",
+          "at": "2026-10-07T22:13:47.632699+00:00"
         }
       },
       "reports": {},
