@@ -4628,6 +4628,11 @@
           "digest": "sha256:8266238ffe62fe4f4e8c7ba656668ae74deb5c985b68c1ddfbade9b50799043d",
           "version": "0.162.0",
           "at": "2026-10-08T22:19:23.175574+00:00"
+        },
+        "amd64:opencode": {
+          "digest": "sha256:8266238ffe62fe4f4e8c7ba656668ae74deb5c985b68c1ddfbade9b50799043d",
+          "version": "1.18.35",
+          "at": "2026-10-08T22:19:25.294229+00:00"
         }
       },
       "reports": {},
