@@ -4533,6 +4533,11 @@
           "digest": "sha256:3db49bae87a86eb6027bc412f9d116e0909fcdba8696539b57abf6bf4bbeee1a",
           "version": "0.161.0",
           "at": "2026-10-08T09:15:26.780488+00:00"
+        },
+        "arm64:opencode": {
+          "digest": "sha256:3db49bae87a86eb6027bc412f9d116e0909fcdba8696539b57abf6bf4bbeee1a",
+          "version": "1.18.35",
+          "at": "2026-10-08T09:15:39.596226+00:00"
         }
       },
       "reports": {
