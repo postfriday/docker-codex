@@ -4735,14 +4735,16 @@
       "attestation": null,
       "attempts": {
         "37990362017:1": {
-          "status": "running",
+          "status": "failed",
           "started_at": "2026-10-09T20:57:09.189461+00:00",
           "run_id": "37990362017",
-          "run_attempt": "1"
+          "run_attempt": "1",
+          "finished_at": "2026-10-09T20:57:34.336170+00:00",
+          "error": "Workflow step failed; see Actions run"
         }
       },
-      "failure_count": 0,
-      "last_error": null,
+      "failure_count": 1,
+      "last_error": "Workflow step failed; see Actions run",
       "failure_issue": null,
       "published_tags": {},
       "created_at": "2026-10-09T20:56:56.031857+00:00",
