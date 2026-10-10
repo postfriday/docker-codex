@@ -4807,7 +4807,10 @@
       "published_tags": {},
       "created_at": "2026-10-09T20:56:56.031857+00:00",
       "completed_at": null,
-      "cancellation": null
+      "cancellation": null,
+      "tag_intents": {
+        "1.0.63": "sha256:c03aeb86c1f9b7647e999589d9cd47d7aafd2cf2efe7e09111381e2386ff2484"
+      }
     }
   }
 }
