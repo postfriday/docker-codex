@@ -4748,6 +4748,11 @@
           "digest": "sha256:c03aeb86c1f9b7647e999589d9cd47d7aafd2cf2efe7e09111381e2386ff2484",
           "version": "2.1.296",
           "at": "2026-10-10T01:08:12.790607+00:00"
+        },
+        "arm64:codex": {
+          "digest": "sha256:c03aeb86c1f9b7647e999589d9cd47d7aafd2cf2efe7e09111381e2386ff2484",
+          "version": "0.162.1",
+          "at": "2026-10-10T01:09:58.560343+00:00"
         }
       },
       "reports": {
