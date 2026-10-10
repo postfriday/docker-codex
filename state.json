@@ -4726,7 +4726,7 @@
         "opencode": "1.18.35",
         "claude": "2.1.296"
       },
-      "status": "publishing",
+      "status": "completed",
       "candidate_tag": "candidate-v1.0.63",
       "candidate_digest": "sha256:c03aeb86c1f9b7647e999589d9cd47d7aafd2cf2efe7e09111381e2386ff2484",
       "platform_digests": {
@@ -4795,14 +4795,15 @@
           "error": "Workflow step failed; see Actions run"
         },
         "38010915608:1": {
-          "status": "running",
+          "status": "completed",
           "started_at": "2026-10-10T00:53:06.379587+00:00",
           "run_id": "38010915608",
-          "run_attempt": "1"
+          "run_attempt": "1",
+          "finished_at": "2026-10-10T01:12:17.269677+00:00"
         }
       },
       "failure_count": 1,
-      "last_error": "Workflow step failed; see Actions run",
+      "last_error": null,
       "failure_issue": null,
       "published_tags": {
         "1.0.63": "sha256:c03aeb86c1f9b7647e999589d9cd47d7aafd2cf2efe7e09111381e2386ff2484",
@@ -4813,7 +4814,7 @@
         "latest": "sha256:c03aeb86c1f9b7647e999589d9cd47d7aafd2cf2efe7e09111381e2386ff2484"
       },
       "created_at": "2026-10-09T20:56:56.031857+00:00",
-      "completed_at": null,
+      "completed_at": "2026-10-10T01:12:17.269649+00:00",
       "cancellation": null,
       "tag_intents": {
         "1.0.63": "sha256:c03aeb86c1f9b7647e999589d9cd47d7aafd2cf2efe7e09111381e2386ff2484",
