@@ -5005,7 +5005,8 @@
           "sha256": "d379ae53ea061141f914e237ea23013d6b361a411be05e74166d6d293f5d8229",
           "digest": "sha256:99c87d67227910037d5f4bc6cfe335d599507a12dc79e252711870872ea517a7",
           "asset": "https://github.com/postfriday/docker-codex/releases/download/untagged-34f70aafebc78aca0a33/trivy-arm64.sarif",
-          "sarif_id": "ff09d682-c797-11f1-9bd7-10bb931548f4"
+          "sarif_id": "ff09d682-c797-11f1-9bd7-10bb931548f4",
+          "sarif_status": "complete"
         }
       },
       "attestation": {
