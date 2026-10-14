@@ -5071,7 +5071,14 @@
       "checks": {},
       "reports": {},
       "attestation": null,
-      "attempts": {},
+      "attempts": {
+        "38604541631:1": {
+          "status": "running",
+          "started_at": "2026-10-14T17:11:46.360990+00:00",
+          "run_id": "38604541631",
+          "run_attempt": "1"
+        }
+      },
       "failure_count": 0,
       "last_error": null,
       "failure_issue": null,
