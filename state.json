@@ -5064,10 +5064,13 @@
         "opencode": "1.19.0",
         "claude": "2.1.300"
       },
-      "status": "reserved",
+      "status": "candidate_saved",
       "candidate_tag": "candidate-v1.0.66",
-      "candidate_digest": null,
-      "platform_digests": {},
+      "candidate_digest": "sha256:9e1918e1b457ae88d1fd743b18d832b3ff89a8589358f0a247cf65cd9f581935",
+      "platform_digests": {
+        "amd64": "sha256:9804c81fe22a852227c8e5a057443fa6febc4d382e32631812ba127705c01436",
+        "arm64": "sha256:d493116fc1aa66d42e256ddef8bb4fd25bb42269a991f94c51941b52e3a221af"
+      },
       "checks": {},
       "reports": {},
       "attestation": null,
