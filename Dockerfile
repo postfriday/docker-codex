@@ -1,15 +1,9 @@
 FROM node:24-slim
 
-<<<<<<< HEAD
 ARG CODEX_VERSION=0.162.1
 ARG OPENCODE_VERSION=1.19.0
 ARG CLAUDE_CODE_VERSION=2.1.300
-=======
-ARG CODEX_VERSION=0.154.0
-ARG OPENCODE_VERSION=1.18.30
-ARG CLAUDE_CODE_VERSION=2.1.268
 ARG CODERABBIT_VERSION=0.9.0
->>>>>>> 5713f29 (feat(docker): integrate CodeRabbit CLI version 0.9.0 with explicit install script)
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
