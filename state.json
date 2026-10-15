@@ -5411,6 +5411,11 @@
           "digest": "sha256:df236cec916275f6d57b1b22ea2345659ff04facb443a51fc3cb529e1c4bcf50",
           "version": "1.19.1",
           "at": "2026-10-15T22:35:50.308187+00:00"
+        },
+        "amd64:claude": {
+          "digest": "sha256:df236cec916275f6d57b1b22ea2345659ff04facb443a51fc3cb529e1c4bcf50",
+          "version": "2.1.301",
+          "at": "2026-10-15T22:35:51.771909+00:00"
         }
       },
       "reports": {},
