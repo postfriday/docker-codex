@@ -8,6 +8,28 @@
 
 Релиз новой версии:
 * `task bump && task release && git push --all && git push --tags`
+
+## CodeRabbit CLI
+
+В образ установлен [CodeRabbit CLI](https://docs.coderabbit.ai/cli/) версии `0.9.0`.
+Команды `coderabbit` и `cr` доступны в PATH на AMD64 и ARM64. Версия закреплена в
+`ARG CODERABBIT_VERSION` в Dockerfile; её обновляют вручную, отдельно от npm CLI.
+Сборка проверяет подпись и контрольные суммы через официальный установщик и
+не требует входа в аккаунт. Авторизация выполняется после запуска контейнера:
+
+```sh
+docker run --rm -it --entrypoint /bin/bash \
+  -v "$PWD:/workspace" docker-codex:dev
+coderabbit --version
+coderabbit auth login
+coderabbit review
+# cr — короткое имя той же команды
+```
+
+Для EU-региона используйте `coderabbit auth login --region eu`. Следуйте инструкциям
+авторизации CLI; для среды без браузера поддерживается `auth login --api-key`.
+Указывайте ключ только во время работы контейнера, а не при сборке образа.
+
 ## Автоматическое обновление CLI
 
 Workflow `Update CLI tools` проверяет npm каждый час (`17 * * * *`, возможны задержки
@@ -96,4 +118,4 @@ Publish job получает `contents: write` (журнал и assets), `packag
 
 Локальная проверка логики без сети: `task test`. Workflow проверяются `actionlint`.
 Состояние реализации и ограничения реальной проверки описаны в
-[задаче 1](docs/tasks/0000000001-auto-update-tools/task.md).
+[задаче 1](docs/tasks/completed/0000000001-auto-update-tools/task.md).

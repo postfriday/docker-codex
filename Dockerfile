@@ -1,8 +1,15 @@
 FROM node:24-slim
 
+<<<<<<< HEAD
 ARG CODEX_VERSION=0.162.1
 ARG OPENCODE_VERSION=1.19.0
 ARG CLAUDE_CODE_VERSION=2.1.300
+=======
+ARG CODEX_VERSION=0.154.0
+ARG OPENCODE_VERSION=1.18.30
+ARG CLAUDE_CODE_VERSION=2.1.268
+ARG CODERABBIT_VERSION=0.9.0
+>>>>>>> 5713f29 (feat(docker): integrate CodeRabbit CLI version 0.9.0 with explicit install script)
 
 RUN apt-get update && \
     apt-get install -y --no-install-recommends \
@@ -11,8 +18,10 @@ RUN apt-get update && \
         curl \
         git \
         jq \
+        openssl \
         ripgrep \
         shellcheck \
+        unzip \
     && rm -rf /var/lib/apt/lists/*
 
 RUN npx -y @playwright/mcp install-browser chromium && \
@@ -26,6 +35,15 @@ RUN npm i -g @openai/codex@${CODEX_VERSION} mcp-remote
 RUN npm i -g @anthropic-ai/claude-code@${CLAUDE_CODE_VERSION}
 
 RUN npm i -g opencode-ai@${OPENCODE_VERSION}
+
+RUN set -eu; \
+    curl -fsSL "https://cli.coderabbit.ai/releases/${CODERABBIT_VERSION}/install.sh" -o /tmp/coderabbit-install.sh; \
+    CODERABBIT_VERSION="${CODERABBIT_VERSION}" \
+        CODERABBIT_INSTALL_DIR=/usr/local/bin \
+        CR_CLI_SKIP_LOGIN=1 sh /tmp/coderabbit-install.sh; \
+    rm /tmp/coderabbit-install.sh; \
+    coderabbit --version; \
+    cr --version
 
 ARG VERSION
 ARG REVISION
