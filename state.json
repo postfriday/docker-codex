@@ -5354,7 +5354,9 @@
       "failure_count": 0,
       "last_error": null,
       "failure_issue": null,
-      "published_tags": {},
+      "published_tags": {
+        "1.0.69": "sha256:9b334a7cc7f9966b1f5bec0c5e85545980bcdfb9510374f51455be1528637bb4"
+      },
       "created_at": "2026-10-15T19:09:19.411403+00:00",
       "completed_at": null,
       "cancellation": null,
