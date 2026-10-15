@@ -5467,7 +5467,8 @@
       "published_tags": {
         "1.0.70": "sha256:df236cec916275f6d57b1b22ea2345659ff04facb443a51fc3cb529e1c4bcf50",
         "a0ad947": "sha256:df236cec916275f6d57b1b22ea2345659ff04facb443a51fc3cb529e1c4bcf50",
-        "a0ad947bd478bc6a56b0046f5b08295558fea845": "sha256:df236cec916275f6d57b1b22ea2345659ff04facb443a51fc3cb529e1c4bcf50"
+        "a0ad947bd478bc6a56b0046f5b08295558fea845": "sha256:df236cec916275f6d57b1b22ea2345659ff04facb443a51fc3cb529e1c4bcf50",
+        "1.0": "sha256:df236cec916275f6d57b1b22ea2345659ff04facb443a51fc3cb529e1c4bcf50"
       },
       "created_at": "2026-10-15T22:20:15.172384+00:00",
       "completed_at": null,
