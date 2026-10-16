@@ -5629,7 +5629,14 @@
       "checks": {},
       "reports": {},
       "attestation": null,
-      "attempts": {},
+      "attempts": {
+        "38939553048:1": {
+          "status": "running",
+          "started_at": "2026-10-16T17:25:30.365415+00:00",
+          "run_id": "38939553048",
+          "run_attempt": "1"
+        }
+      },
       "failure_count": 0,
       "last_error": null,
       "failure_issue": null,
