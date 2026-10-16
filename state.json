@@ -5629,7 +5629,13 @@
         "amd64": "sha256:6af41d9ba99fcb0716990f9efe48ca60fdbeed5fe35d5d0ccec90a3d5a08977d",
         "arm64": "sha256:f3a9b3871c1d4aa739b9ec71a5b802aa662e59debba25f8926154fedfadecb1c"
       },
-      "checks": {},
+      "checks": {
+        "amd64:codex": {
+          "digest": "sha256:eba8ebe7ad479219db9c0c216c318a8946c1f20dd0bf0bb846844664ccdcbcb6",
+          "version": "0.163.0",
+          "at": "2026-10-16T17:39:49.847756+00:00"
+        }
+      },
       "reports": {},
       "attestation": null,
       "attempts": {
