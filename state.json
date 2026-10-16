@@ -5694,7 +5694,8 @@
       "failure_issue": null,
       "published_tags": {
         "1.0.72": "sha256:eba8ebe7ad479219db9c0c216c318a8946c1f20dd0bf0bb846844664ccdcbcb6",
-        "f4cedcf": "sha256:eba8ebe7ad479219db9c0c216c318a8946c1f20dd0bf0bb846844664ccdcbcb6"
+        "f4cedcf": "sha256:eba8ebe7ad479219db9c0c216c318a8946c1f20dd0bf0bb846844664ccdcbcb6",
+        "f4cedcf8c2a6a13bd3853f42a082254b0718e6dd": "sha256:eba8ebe7ad479219db9c0c216c318a8946c1f20dd0bf0bb846844664ccdcbcb6"
       },
       "created_at": "2026-10-16T17:25:14.157985+00:00",
       "completed_at": null,
