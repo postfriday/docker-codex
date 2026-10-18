@@ -5759,6 +5759,11 @@
           "digest": "sha256:2ae15fdf459414dff13dd4cb3e0d5611ebc7ed017abc8fb9aff2d7f9c5c82472",
           "version": "0.163.0",
           "at": "2026-10-18T23:30:25.503629+00:00"
+        },
+        "arm64:opencode": {
+          "digest": "sha256:2ae15fdf459414dff13dd4cb3e0d5611ebc7ed017abc8fb9aff2d7f9c5c82472",
+          "version": "1.19.3",
+          "at": "2026-10-18T23:30:38.396261+00:00"
         }
       },
       "reports": {
