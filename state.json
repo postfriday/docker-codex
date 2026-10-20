@@ -6033,7 +6033,8 @@
       "tag_intents": {
         "1.0.75": "sha256:66369fd56e6c683c9981b84278c06a63e36cd245ea9ccfddbbfd2f8f0bfc325c",
         "ade74b4": "sha256:66369fd56e6c683c9981b84278c06a63e36cd245ea9ccfddbbfd2f8f0bfc325c",
-        "ade74b4946dcc6d1dfb46bddd1031b0f515d8d80": "sha256:66369fd56e6c683c9981b84278c06a63e36cd245ea9ccfddbbfd2f8f0bfc325c"
+        "ade74b4946dcc6d1dfb46bddd1031b0f515d8d80": "sha256:66369fd56e6c683c9981b84278c06a63e36cd245ea9ccfddbbfd2f8f0bfc325c",
+        "1.0": "sha256:66369fd56e6c683c9981b84278c06a63e36cd245ea9ccfddbbfd2f8f0bfc325c"
       }
     }
   }
