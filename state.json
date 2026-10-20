@@ -5952,7 +5952,7 @@
         "opencode": "1.19.3",
         "claude": "2.1.305"
       },
-      "status": "candidate_saved",
+      "status": "verified",
       "candidate_tag": "candidate-v1.0.75",
       "candidate_digest": "sha256:66369fd56e6c683c9981b84278c06a63e36cd245ea9ccfddbbfd2f8f0bfc325c",
       "platform_digests": {
