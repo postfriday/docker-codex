@@ -6172,7 +6172,7 @@
         "opencode": "1.19.3",
         "claude": "2.1.307"
       },
-      "status": "verified",
+      "status": "publishing",
       "candidate_tag": "candidate-v1.0.77",
       "candidate_digest": "sha256:478b5987447d08aa115d6786dab83b4fdd2a38a0c9b2137144a76cd820cf80f1",
       "platform_digests": {
