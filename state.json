@@ -6062,10 +6062,13 @@
         "opencode": "1.19.3",
         "claude": "2.1.306"
       },
-      "status": "reserved",
+      "status": "candidate_saved",
       "candidate_tag": "candidate-v1.0.76",
-      "candidate_digest": null,
-      "platform_digests": {},
+      "candidate_digest": "sha256:e7435e86c2335d8f550e6460d7af8d00e745e31a1592b91d0c550a94ed005cc4",
+      "platform_digests": {
+        "amd64": "sha256:25c61da329f94b47a757ed89b3b668d5e52754e1ce81dc29ab807e394cd9cc4a",
+        "arm64": "sha256:3209177a80530e89d399ff979ffa6daae920a7a5f029c7f9cc66e9586b8ea70e"
+      },
       "checks": {},
       "reports": {},
       "attestation": null,
