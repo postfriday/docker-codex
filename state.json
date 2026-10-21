@@ -6172,10 +6172,13 @@
         "opencode": "1.19.3",
         "claude": "2.1.307"
       },
-      "status": "reserved",
+      "status": "candidate_saved",
       "candidate_tag": "candidate-v1.0.77",
-      "candidate_digest": null,
-      "platform_digests": {},
+      "candidate_digest": "sha256:478b5987447d08aa115d6786dab83b4fdd2a38a0c9b2137144a76cd820cf80f1",
+      "platform_digests": {
+        "amd64": "sha256:bd305ec72ce46476b1cc46009ed89ab98b534f5804b9528f55c8cd091c77b45a",
+        "arm64": "sha256:da50329272329a36de44db0cb948a3f392b27c4b065f3b1eb03ad2fc328dec65"
+      },
       "checks": {},
       "reports": {},
       "attestation": null,
