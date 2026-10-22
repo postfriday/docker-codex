@@ -6573,7 +6573,8 @@
       "last_error": null,
       "failure_issue": null,
       "published_tags": {
-        "1.0.80": "sha256:c671f7ef5bbf6c448c60f9aa94695ec216ca55a3f13180eeb7ce80fc871d739f"
+        "1.0.80": "sha256:c671f7ef5bbf6c448c60f9aa94695ec216ca55a3f13180eeb7ce80fc871d739f",
+        "a5c7eb8": "sha256:c671f7ef5bbf6c448c60f9aa94695ec216ca55a3f13180eeb7ce80fc871d739f"
       },
       "created_at": "2026-10-22T23:23:20.246430+00:00",
       "completed_at": null,
