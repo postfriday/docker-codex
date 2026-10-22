@@ -6502,7 +6502,7 @@
         "opencode": "1.19.4",
         "claude": "2.1.309"
       },
-      "status": "candidate_saved",
+      "status": "verified",
       "candidate_tag": "candidate-v1.0.80",
       "candidate_digest": "sha256:c671f7ef5bbf6c448c60f9aa94695ec216ca55a3f13180eeb7ce80fc871d739f",
       "platform_digests": {
