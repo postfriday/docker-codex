@@ -6282,7 +6282,7 @@
         "opencode": "1.19.3",
         "claude": "2.1.308"
       },
-      "status": "verified",
+      "status": "publishing",
       "candidate_tag": "candidate-v1.0.78",
       "candidate_digest": "sha256:3ba6d218d893eb67d183801a78258b69109e94c71fe500cd9c94d6c06c0d43f7",
       "platform_digests": {
