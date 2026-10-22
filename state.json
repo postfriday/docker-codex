@@ -6462,7 +6462,9 @@
       "failure_count": 0,
       "last_error": null,
       "failure_issue": null,
-      "published_tags": {},
+      "published_tags": {
+        "1.0.79": "sha256:4629a899290efbc7501ada3f82ead3951904e790a4752bcbe870c1086d6c155e"
+      },
       "created_at": "2026-10-22T15:18:05.138864+00:00",
       "completed_at": null,
       "cancellation": null,
