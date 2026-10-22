@@ -6502,10 +6502,13 @@
         "opencode": "1.19.4",
         "claude": "2.1.309"
       },
-      "status": "reserved",
+      "status": "candidate_saved",
       "candidate_tag": "candidate-v1.0.80",
-      "candidate_digest": null,
-      "platform_digests": {},
+      "candidate_digest": "sha256:c671f7ef5bbf6c448c60f9aa94695ec216ca55a3f13180eeb7ce80fc871d739f",
+      "platform_digests": {
+        "amd64": "sha256:c3b7923ee4c0108acf1d0c018acec8b0994ee22081d79220a03c172880dae352",
+        "arm64": "sha256:0ad65f4d68da59c7b7aa59e8822c9cef55777cac81886781f79b162118b7c103"
+      },
       "checks": {},
       "reports": {},
       "attestation": null,
