@@ -6353,7 +6353,8 @@
       "last_error": null,
       "failure_issue": null,
       "published_tags": {
-        "1.0.78": "sha256:3ba6d218d893eb67d183801a78258b69109e94c71fe500cd9c94d6c06c0d43f7"
+        "1.0.78": "sha256:3ba6d218d893eb67d183801a78258b69109e94c71fe500cd9c94d6c06c0d43f7",
+        "e09b779": "sha256:3ba6d218d893eb67d183801a78258b69109e94c71fe500cd9c94d6c06c0d43f7"
       },
       "created_at": "2026-10-22T04:48:45.952491+00:00",
       "completed_at": null,
