@@ -6399,7 +6399,14 @@
       "checks": {},
       "reports": {},
       "attestation": null,
-      "attempts": {},
+      "attempts": {
+        "39803535488:1": {
+          "status": "running",
+          "started_at": "2026-10-22T15:18:24.594728+00:00",
+          "run_id": "39803535488",
+          "run_attempt": "1"
+        }
+      },
       "failure_count": 0,
       "last_error": null,
       "failure_issue": null,
