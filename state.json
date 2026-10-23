@@ -6795,7 +6795,8 @@
       "published_tags": {
         "1.0.82": "sha256:5a689ae3aa0cfdb65e51c68a974a9820c4251d5b5ca941e8a6b3bf9bb6f6ed23",
         "fed098b": "sha256:5a689ae3aa0cfdb65e51c68a974a9820c4251d5b5ca941e8a6b3bf9bb6f6ed23",
-        "fed098b477c532500717228dec8f7241905c9a79": "sha256:5a689ae3aa0cfdb65e51c68a974a9820c4251d5b5ca941e8a6b3bf9bb6f6ed23"
+        "fed098b477c532500717228dec8f7241905c9a79": "sha256:5a689ae3aa0cfdb65e51c68a974a9820c4251d5b5ca941e8a6b3bf9bb6f6ed23",
+        "1.0": "sha256:5a689ae3aa0cfdb65e51c68a974a9820c4251d5b5ca941e8a6b3bf9bb6f6ed23"
       },
       "created_at": "2026-10-23T22:15:22.149737+00:00",
       "completed_at": null,
