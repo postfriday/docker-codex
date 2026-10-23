@@ -6754,6 +6754,11 @@
           "digest": "sha256:5a689ae3aa0cfdb65e51c68a974a9820c4251d5b5ca941e8a6b3bf9bb6f6ed23",
           "version": "1.19.4",
           "at": "2026-10-23T22:28:03.289823+00:00"
+        },
+        "arm64:claude": {
+          "digest": "sha256:5a689ae3aa0cfdb65e51c68a974a9820c4251d5b5ca941e8a6b3bf9bb6f6ed23",
+          "version": "2.1.310",
+          "at": "2026-10-23T22:28:05.017470+00:00"
         }
       },
       "reports": {
