@@ -6722,10 +6722,13 @@
         "opencode": "1.19.4",
         "claude": "2.1.310"
       },
-      "status": "reserved",
+      "status": "candidate_saved",
       "candidate_tag": "candidate-v1.0.82",
-      "candidate_digest": null,
-      "platform_digests": {},
+      "candidate_digest": "sha256:5a689ae3aa0cfdb65e51c68a974a9820c4251d5b5ca941e8a6b3bf9bb6f6ed23",
+      "platform_digests": {
+        "amd64": "sha256:d2dbd36c00165cb952b8d7fd3a5f7f871cc22daac44198654c2fb1a1e51989a1",
+        "arm64": "sha256:8ec0598bd1647d1c0d0d15ad8e05a050c10c858d2079ebe6cc91822517ca336e"
+      },
       "checks": {},
       "reports": {},
       "attestation": null,
