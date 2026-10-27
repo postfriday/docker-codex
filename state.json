@@ -6832,10 +6832,13 @@
         "opencode": "1.19.4",
         "claude": "2.1.311"
       },
-      "status": "reserved",
+      "status": "candidate_saved",
       "candidate_tag": "candidate-v1.0.83",
-      "candidate_digest": null,
-      "platform_digests": {},
+      "candidate_digest": "sha256:001c5f7e43542ba77e2b95fd31cea211daedd69ba565e0bf67bb37e5479a2b22",
+      "platform_digests": {
+        "amd64": "sha256:00a10838bc01594bf2354a320b9a182d315bc151d6f9668a6cea12ec88b0f71e",
+        "arm64": "sha256:2880c2ffa01798ae68f316961a6125d77e94a8a44314745244664519a6eb086f"
+      },
       "checks": {},
       "reports": {},
       "attestation": null,
