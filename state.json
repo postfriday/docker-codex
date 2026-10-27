@@ -6942,10 +6942,13 @@
         "opencode": "1.19.4",
         "claude": "2.1.312"
       },
-      "status": "reserved",
+      "status": "candidate_saved",
       "candidate_tag": "candidate-v1.0.84",
-      "candidate_digest": null,
-      "platform_digests": {},
+      "candidate_digest": "sha256:1d416c66797b5740a3f99a1515f6d9cfec3333c636295702f4d56e97ad32b6d7",
+      "platform_digests": {
+        "amd64": "sha256:78c75cfe6100fddbdcd379ebfeddfe95d885f8cbefc98f8b090ee3f0aa3d7da2",
+        "arm64": "sha256:8df4cb609d98f69dd1d20d0126638fe85233da1b1581822f43a2a68da4c67142"
+      },
       "checks": {},
       "reports": {},
       "attestation": null,
