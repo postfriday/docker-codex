@@ -7064,6 +7064,11 @@
           "digest": "sha256:1b09c4fa6b97513f7dfc00fe4de44919a66c3b5ee1bdd83fb560ea308b87ee5e",
           "version": "0.165.0",
           "at": "2026-10-28T08:51:38.674799+00:00"
+        },
+        "amd64:opencode": {
+          "digest": "sha256:1b09c4fa6b97513f7dfc00fe4de44919a66c3b5ee1bdd83fb560ea308b87ee5e",
+          "version": "1.19.5",
+          "at": "2026-10-28T08:51:40.917962+00:00"
         }
       },
       "reports": {},
