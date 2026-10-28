@@ -7052,7 +7052,7 @@
         "opencode": "1.19.5",
         "claude": "2.1.312"
       },
-      "status": "verified",
+      "status": "publishing",
       "candidate_tag": "candidate-v1.0.85",
       "candidate_digest": "sha256:1b09c4fa6b97513f7dfc00fe4de44919a66c3b5ee1bdd83fb560ea308b87ee5e",
       "platform_digests": {
