@@ -7052,10 +7052,13 @@
         "opencode": "1.19.5",
         "claude": "2.1.312"
       },
-      "status": "reserved",
+      "status": "candidate_saved",
       "candidate_tag": "candidate-v1.0.85",
-      "candidate_digest": null,
-      "platform_digests": {},
+      "candidate_digest": "sha256:1b09c4fa6b97513f7dfc00fe4de44919a66c3b5ee1bdd83fb560ea308b87ee5e",
+      "platform_digests": {
+        "amd64": "sha256:bc7f83bd4be4ffe51b1a7ad5bd33c553485d73fee14c333a263e55ea15ee4870",
+        "arm64": "sha256:a4ba18e3c271adf8e32cea4f9c560fc4219fa469cee5a01f0c9d072482e9f973"
+      },
       "checks": {},
       "reports": {},
       "attestation": null,
