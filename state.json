@@ -7125,7 +7125,10 @@
       "published_tags": {},
       "created_at": "2026-10-28T08:34:37.507161+00:00",
       "completed_at": null,
-      "cancellation": null
+      "cancellation": null,
+      "tag_intents": {
+        "1.0.85": "sha256:1b09c4fa6b97513f7dfc00fe4de44919a66c3b5ee1bdd83fb560ea308b87ee5e"
+      }
     }
   }
 }
