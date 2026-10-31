@@ -7382,7 +7382,7 @@
         "opencode": "1.19.5",
         "claude": "2.1.315"
       },
-      "status": "publishing",
+      "status": "completed",
       "candidate_tag": "candidate-v1.0.88",
       "candidate_digest": "sha256:16ced8adda3c23479c93b03737dacf53c475f1693bc13158105494bbbb237b33",
       "platform_digests": {
@@ -7451,14 +7451,15 @@
           "error": "trivy failed (1): See command output in the Actions log"
         },
         "41173703873:1": {
-          "status": "running",
+          "status": "completed",
           "started_at": "2026-10-31T05:43:19.984325+00:00",
           "run_id": "41173703873",
-          "run_attempt": "1"
+          "run_attempt": "1",
+          "finished_at": "2026-10-31T05:47:18.770226+00:00"
         }
       },
       "failure_count": 1,
-      "last_error": "trivy failed (1): See command output in the Actions log",
+      "last_error": null,
       "failure_issue": null,
       "published_tags": {
         "1.0.88": "sha256:16ced8adda3c23479c93b03737dacf53c475f1693bc13158105494bbbb237b33",
@@ -7469,7 +7470,7 @@
         "latest": "sha256:16ced8adda3c23479c93b03737dacf53c475f1693bc13158105494bbbb237b33"
       },
       "created_at": "2026-10-30T23:48:01.021097+00:00",
-      "completed_at": null,
+      "completed_at": "2026-10-31T05:47:18.770185+00:00",
       "cancellation": null,
       "tag_intents": {
         "1.0.88": "sha256:16ced8adda3c23479c93b03737dacf53c475f1693bc13158105494bbbb237b33",
