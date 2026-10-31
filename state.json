@@ -7416,6 +7416,12 @@
           "run_attempt": "1",
           "finished_at": "2026-10-31T00:01:14.852357+00:00",
           "error": "trivy failed (1): See command output in the Actions log"
+        },
+        "41173703873:1": {
+          "status": "running",
+          "started_at": "2026-10-31T05:43:19.984325+00:00",
+          "run_id": "41173703873",
+          "run_attempt": "1"
         }
       },
       "failure_count": 1,
