@@ -7382,7 +7382,7 @@
         "opencode": "1.19.5",
         "claude": "2.1.315"
       },
-      "status": "candidate_saved",
+      "status": "verified",
       "candidate_tag": "candidate-v1.0.88",
       "candidate_digest": "sha256:16ced8adda3c23479c93b03737dacf53c475f1693bc13158105494bbbb237b33",
       "platform_digests": {
