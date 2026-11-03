@@ -7610,10 +7610,13 @@
         "opencode": "1.19.5",
         "claude": "2.1.317"
       },
-      "status": "reserved",
+      "status": "candidate_saved",
       "candidate_tag": "candidate-v1.0.90",
-      "candidate_digest": null,
-      "platform_digests": {},
+      "candidate_digest": "sha256:742d902ad63580466d1c35107eed76f66cd53f54b403deb74d105d5a9d10398f",
+      "platform_digests": {
+        "amd64": "sha256:adce698012b882bdebf845374bb4e44e87db8ab29c0358b7b0e7cd51ca08a544",
+        "arm64": "sha256:48116b34d1fe9c7eed76cd8d11ad24a34d25b231e1cc5c778156119e98c021cc"
+      },
       "checks": {},
       "reports": {},
       "attestation": null,
