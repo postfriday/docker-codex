@@ -7720,7 +7720,7 @@
         "opencode": "1.19.5",
         "claude": "2.1.318"
       },
-      "status": "verified",
+      "status": "publishing",
       "candidate_tag": "candidate-v1.0.91",
       "candidate_digest": "sha256:8398e280e7eb4819dc12e35a7c7dd30593e10a6a681d6d749511900fe9bd4f5b",
       "platform_digests": {
