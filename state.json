@@ -7807,7 +7807,8 @@
       "last_error": "Workflow step failed; see Actions run",
       "failure_issue": null,
       "published_tags": {
-        "1.0.91": "sha256:8398e280e7eb4819dc12e35a7c7dd30593e10a6a681d6d749511900fe9bd4f5b"
+        "1.0.91": "sha256:8398e280e7eb4819dc12e35a7c7dd30593e10a6a681d6d749511900fe9bd4f5b",
+        "86f7847": "sha256:8398e280e7eb4819dc12e35a7c7dd30593e10a6a681d6d749511900fe9bd4f5b"
       },
       "created_at": "2026-11-04T01:22:48.032260+00:00",
       "completed_at": null,
