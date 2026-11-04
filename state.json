@@ -7729,14 +7729,16 @@
       "attestation": null,
       "attempts": {
         "41753653110:1": {
-          "status": "running",
+          "status": "failed",
           "started_at": "2026-11-04T01:23:06.304147+00:00",
           "run_id": "41753653110",
-          "run_attempt": "1"
+          "run_attempt": "1",
+          "finished_at": "2026-11-04T01:23:42.580353+00:00",
+          "error": "Workflow step failed; see Actions run"
         }
       },
-      "failure_count": 0,
-      "last_error": null,
+      "failure_count": 1,
+      "last_error": "Workflow step failed; see Actions run",
       "failure_issue": null,
       "published_tags": {},
       "created_at": "2026-11-04T01:22:48.032260+00:00",
