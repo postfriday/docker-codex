@@ -7737,13 +7737,15 @@
           "error": "Workflow step failed; see Actions run"
         },
         "41805835184:1": {
-          "status": "running",
+          "status": "failed",
           "started_at": "2026-11-04T09:14:47.206754+00:00",
           "run_id": "41805835184",
-          "run_attempt": "1"
+          "run_attempt": "1",
+          "finished_at": "2026-11-04T09:15:23.415797+00:00",
+          "error": "Workflow step failed; see Actions run"
         }
       },
-      "failure_count": 1,
+      "failure_count": 2,
       "last_error": "Workflow step failed; see Actions run",
       "failure_issue": null,
       "published_tags": {},
