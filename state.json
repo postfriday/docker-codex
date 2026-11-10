@@ -8028,7 +8028,8 @@
       "failure_issue": null,
       "published_tags": {
         "1.0.93": "sha256:27e06dde47553b47998ea8883b59a44c5884e32fedec9b0bd82e8086d94d55b4",
-        "1cb61e6": "sha256:27e06dde47553b47998ea8883b59a44c5884e32fedec9b0bd82e8086d94d55b4"
+        "1cb61e6": "sha256:27e06dde47553b47998ea8883b59a44c5884e32fedec9b0bd82e8086d94d55b4",
+        "1cb61e66f73c282fcbc0ed9a092f1b01aad0a059": "sha256:27e06dde47553b47998ea8883b59a44c5884e32fedec9b0bd82e8086d94d55b4"
       },
       "created_at": "2026-11-10T01:32:20.658188+00:00",
       "completed_at": null,
