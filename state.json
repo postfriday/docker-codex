@@ -8073,7 +8073,13 @@
         "amd64": "sha256:de2fd21e826a13816f7791cd4f5ae243ade17a9d8d4a9f726ab63cf3ad8b3149",
         "arm64": "sha256:5cf8af38eeb0819a40fbe6d809ac2c9a834cb23f04670952bf3cf5b729b73936"
       },
-      "checks": {},
+      "checks": {
+        "amd64:codex": {
+          "digest": "sha256:44ac3d1c1f4b076ccbc0e53398476f4dccb9d8117c971c38d27328fbb158597d",
+          "version": "0.167.0",
+          "at": "2026-11-10T10:07:26.871995+00:00"
+        }
+      },
       "reports": {},
       "attestation": null,
       "attempts": {
