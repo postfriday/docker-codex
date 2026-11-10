@@ -8066,10 +8066,13 @@
         "opencode": "1.19.5",
         "claude": "2.1.322"
       },
-      "status": "reserved",
+      "status": "candidate_saved",
       "candidate_tag": "candidate-v1.0.94",
-      "candidate_digest": null,
-      "platform_digests": {},
+      "candidate_digest": "sha256:44ac3d1c1f4b076ccbc0e53398476f4dccb9d8117c971c38d27328fbb158597d",
+      "platform_digests": {
+        "amd64": "sha256:de2fd21e826a13816f7791cd4f5ae243ade17a9d8d4a9f726ab63cf3ad8b3149",
+        "arm64": "sha256:5cf8af38eeb0819a40fbe6d809ac2c9a834cb23f04670952bf3cf5b729b73936"
+      },
       "checks": {},
       "reports": {},
       "attestation": null,
