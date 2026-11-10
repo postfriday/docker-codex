@@ -8093,6 +8093,11 @@
           "digest": "sha256:44ac3d1c1f4b076ccbc0e53398476f4dccb9d8117c971c38d27328fbb158597d",
           "version": "0.167.0",
           "at": "2026-11-10T10:09:19.249249+00:00"
+        },
+        "arm64:opencode": {
+          "digest": "sha256:44ac3d1c1f4b076ccbc0e53398476f4dccb9d8117c971c38d27328fbb158597d",
+          "version": "1.19.5",
+          "at": "2026-11-10T10:09:30.362700+00:00"
         }
       },
       "reports": {
