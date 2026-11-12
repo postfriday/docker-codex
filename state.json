@@ -8298,6 +8298,11 @@
           "digest": "sha256:306df971249bb4bd3fe1a1067423cf517aef07435339ec94eef8e093e4e6bc39",
           "version": "0.167.2",
           "at": "2026-11-12T03:15:39.768242+00:00"
+        },
+        "amd64:opencode": {
+          "digest": "sha256:306df971249bb4bd3fe1a1067423cf517aef07435339ec94eef8e093e4e6bc39",
+          "version": "1.19.5",
+          "at": "2026-11-12T03:15:41.677417+00:00"
         }
       },
       "reports": {},
