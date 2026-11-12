@@ -8286,10 +8286,13 @@
         "opencode": "1.19.5",
         "claude": "2.1.322"
       },
-      "status": "reserved",
+      "status": "candidate_saved",
       "candidate_tag": "candidate-v1.0.96",
-      "candidate_digest": null,
-      "platform_digests": {},
+      "candidate_digest": "sha256:306df971249bb4bd3fe1a1067423cf517aef07435339ec94eef8e093e4e6bc39",
+      "platform_digests": {
+        "amd64": "sha256:02777e2b8edeaa41f26353561a7afca426f0cbfd3ecee3bdf3187009b4d77859",
+        "arm64": "sha256:7ab262dec391ff7222e7c52fe589ca7eacacae057409cbf19778d3107b190780"
+      },
       "checks": {},
       "reports": {},
       "attestation": null,
