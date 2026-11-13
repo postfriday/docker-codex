@@ -8576,7 +8576,9 @@
       "failure_count": 0,
       "last_error": null,
       "failure_issue": null,
-      "published_tags": {},
+      "published_tags": {
+        "1.0.98": "sha256:f05bc6bf000979ac59372e0f7e2109f66fddfdf57aa0cb295196c201c8e210f9"
+      },
       "created_at": "2026-11-13T07:59:25.081405+00:00",
       "completed_at": null,
       "cancellation": null,
