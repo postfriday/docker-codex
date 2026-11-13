@@ -8513,7 +8513,14 @@
       "checks": {},
       "reports": {},
       "attestation": null,
-      "attempts": {},
+      "attempts": {
+        "43389715354:1": {
+          "status": "running",
+          "started_at": "2026-11-13T07:59:41.470060+00:00",
+          "run_id": "43389715354",
+          "run_attempt": "1"
+        }
+      },
       "failure_count": 0,
       "last_error": null,
       "failure_issue": null,
