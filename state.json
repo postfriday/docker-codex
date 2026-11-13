@@ -8523,6 +8523,11 @@
           "digest": "sha256:f05bc6bf000979ac59372e0f7e2109f66fddfdf57aa0cb295196c201c8e210f9",
           "version": "1.19.5",
           "at": "2026-11-13T08:12:26.751799+00:00"
+        },
+        "amd64:claude": {
+          "digest": "sha256:f05bc6bf000979ac59372e0f7e2109f66fddfdf57aa0cb295196c201c8e210f9",
+          "version": "2.1.323",
+          "at": "2026-11-13T08:12:28.212488+00:00"
         }
       },
       "reports": {},
