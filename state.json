@@ -8616,10 +8616,13 @@
         "opencode": "1.19.5",
         "claude": "2.1.323"
       },
-      "status": "reserved",
+      "status": "candidate_saved",
       "candidate_tag": "candidate-v1.0.99",
-      "candidate_digest": null,
-      "platform_digests": {},
+      "candidate_digest": "sha256:c4d191eae2b2a1db7629e44949d2ae5404848a724047607aaee511d743a50a57",
+      "platform_digests": {
+        "amd64": "sha256:1c7153f75e3ad3865799e4b1325356dd23d55f220c68f43462c7f313ae7059c3",
+        "arm64": "sha256:399e5910aca59b845d838efde42367df35014e52e70a2663d7826513e6e0fbf2"
+      },
       "checks": {},
       "reports": {},
       "attestation": null,
