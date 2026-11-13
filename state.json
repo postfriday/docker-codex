@@ -8777,7 +8777,10 @@
           "asset": "https://github.com/postfriday/docker-codex/releases/download/untagged-c421f6f28d54823ad0fd/trivy-arm64.sarif"
         }
       },
-      "attestation": null,
+      "attestation": {
+        "digest": "sha256:429a9647341df9345fdb57faf3a590765055a084235433d919abe1b70c57a4d6",
+        "verified_at": "2026-11-13T22:54:14.729588+00:00"
+      },
       "attempts": {
         "43520925281:1": {
           "status": "running",
