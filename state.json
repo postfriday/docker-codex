@@ -8428,6 +8428,11 @@
           "digest": "sha256:d1d9c568298a914e33cbed3bab9e4c28d9e4171da92e34ab1086516361ca8a9d",
           "version": "1.19.5",
           "at": "2026-11-13T00:39:07.007270+00:00"
+        },
+        "arm64:claude": {
+          "digest": "sha256:d1d9c568298a914e33cbed3bab9e4c28d9e4171da92e34ab1086516361ca8a9d",
+          "version": "2.1.323",
+          "at": "2026-11-13T00:39:08.926940+00:00"
         }
       },
       "reports": {
