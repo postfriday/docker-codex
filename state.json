@@ -8513,7 +8513,13 @@
         "amd64": "sha256:05253a81ca5dee64c711a32e39389aab1f1c240ce85a2bb9fb416de194877131",
         "arm64": "sha256:45b1a50d63be0d021eb9ec98d49d438ee6cf578d76181d5ff58a981712b85ee1"
       },
-      "checks": {},
+      "checks": {
+        "amd64:codex": {
+          "digest": "sha256:f05bc6bf000979ac59372e0f7e2109f66fddfdf57aa0cb295196c201c8e210f9",
+          "version": "0.168.0",
+          "at": "2026-11-13T08:12:24.708154+00:00"
+        }
+      },
       "reports": {},
       "attestation": null,
       "attempts": {
