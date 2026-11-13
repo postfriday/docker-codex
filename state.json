@@ -8777,7 +8777,8 @@
           "sha256": "00d814efbc827efd9f16a5f6dc97db9923ec0644319627765f1ed1796465e542",
           "digest": "sha256:429a9647341df9345fdb57faf3a590765055a084235433d919abe1b70c57a4d6",
           "asset": "https://github.com/postfriday/docker-codex/releases/download/untagged-c421f6f28d54823ad0fd/trivy-arm64.sarif",
-          "sarif_id": "2d3e2cc6-dfb5-11f1-8984-737ac3e18b26"
+          "sarif_id": "2d3e2cc6-dfb5-11f1-8984-737ac3e18b26",
+          "sarif_status": "complete"
         }
       },
       "attestation": {
