@@ -8836,10 +8836,13 @@
         "opencode": "1.19.5",
         "claude": "2.1.326"
       },
-      "status": "reserved",
+      "status": "candidate_saved",
       "candidate_tag": "candidate-v1.0.101",
-      "candidate_digest": null,
-      "platform_digests": {},
+      "candidate_digest": "sha256:d55316e7129798e0bc5e37c86e0b8d73b65e6878763a9a601e37903c14e31751",
+      "platform_digests": {
+        "amd64": "sha256:1d25e9412f89b4f10af638b747e2f4febfaac17a34f4ea341c73c03fcabf4904",
+        "arm64": "sha256:fc924a4ae36b73f67ce308340a099fc514c68a68c8e2b01628c08275486465c4"
+      },
       "checks": {},
       "reports": {},
       "attestation": null,
