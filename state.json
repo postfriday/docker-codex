@@ -8968,6 +8968,11 @@
           "digest": "sha256:baf327b90e78caa73989330f50abfa3e1d19fc69ec0817cd766101e0ea7a2602",
           "version": "2.1.326",
           "at": "2026-11-17T13:44:13.886258+00:00"
+        },
+        "arm64:codex": {
+          "digest": "sha256:baf327b90e78caa73989330f50abfa3e1d19fc69ec0817cd766101e0ea7a2602",
+          "version": "0.169.0",
+          "at": "2026-11-17T13:46:14.042060+00:00"
         }
       },
       "reports": {
