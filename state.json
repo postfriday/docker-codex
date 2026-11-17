@@ -9129,7 +9129,10 @@
       "published_tags": {},
       "created_at": "2026-11-17T22:25:19.229205+00:00",
       "completed_at": null,
-      "cancellation": null
+      "cancellation": null,
+      "tag_intents": {
+        "1.0.103": "sha256:fe8eab5b1e9b354567036da6ba646a6f204a6eef8d305e778d70ac4f90c4174c"
+      }
     }
   }
 }
