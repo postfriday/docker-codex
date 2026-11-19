@@ -9300,7 +9300,13 @@
           "at": "2026-11-19T03:41:47.507000+00:00"
         }
       },
-      "reports": {},
+      "reports": {
+        "trivy-amd64.sarif": {
+          "sha256": "6e53f72dd244332c643d8e7d60873d83efd35d5daffe9de20109a3c38d57b738",
+          "digest": "sha256:b3152e4cdb9bb0c2607f3d3440c84811e1dd2ab87cb229dfba4a394b7b35d729",
+          "asset": "https://github.com/postfriday/docker-codex/releases/download/untagged-2598d0d3f3e0dbc273d7/trivy-amd64.sarif"
+        }
+      },
       "attestation": null,
       "attempts": {
         "44451761787:1": {
