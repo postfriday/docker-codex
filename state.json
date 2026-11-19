@@ -9413,6 +9413,11 @@
           "digest": "sha256:32e4c381110560eed4da0fb84e948c8d1f20e9fad5c38e0e49e47e289f6f1d41",
           "version": "0.170.0",
           "at": "2026-11-19T21:49:44.362584+00:00"
+        },
+        "arm64:opencode": {
+          "digest": "sha256:32e4c381110560eed4da0fb84e948c8d1f20e9fad5c38e0e49e47e289f6f1d41",
+          "version": "1.19.6",
+          "at": "2026-11-19T21:49:52.477412+00:00"
         }
       },
       "reports": {
