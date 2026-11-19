@@ -9456,7 +9456,9 @@
       "failure_count": 0,
       "last_error": null,
       "failure_issue": null,
-      "published_tags": {},
+      "published_tags": {
+        "1.0.106": "sha256:32e4c381110560eed4da0fb84e948c8d1f20e9fad5c38e0e49e47e289f6f1d41"
+      },
       "created_at": "2026-11-19T21:36:06.935912+00:00",
       "completed_at": null,
       "cancellation": null,
