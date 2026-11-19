@@ -9298,6 +9298,11 @@
           "digest": "sha256:b3152e4cdb9bb0c2607f3d3440c84811e1dd2ab87cb229dfba4a394b7b35d729",
           "version": "2.1.328",
           "at": "2026-11-19T03:41:47.507000+00:00"
+        },
+        "arm64:codex": {
+          "digest": "sha256:b3152e4cdb9bb0c2607f3d3440c84811e1dd2ab87cb229dfba4a394b7b35d729",
+          "version": "0.170.0",
+          "at": "2026-11-19T03:43:33.568915+00:00"
         }
       },
       "reports": {
