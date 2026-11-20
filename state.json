@@ -9677,7 +9677,8 @@
       "last_error": null,
       "failure_issue": null,
       "published_tags": {
-        "1.0.108": "sha256:80ab4b6eb80897f978cdeb6b9761b744f2c8f8d6b0db08bd28331ff9e05645bf"
+        "1.0.108": "sha256:80ab4b6eb80897f978cdeb6b9761b744f2c8f8d6b0db08bd28331ff9e05645bf",
+        "1c05d42": "sha256:80ab4b6eb80897f978cdeb6b9761b744f2c8f8d6b0db08bd28331ff9e05645bf"
       },
       "created_at": "2026-11-20T21:05:43.785623+00:00",
       "completed_at": null,
