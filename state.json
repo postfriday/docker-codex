@@ -9496,10 +9496,13 @@
         "opencode": "1.19.6",
         "claude": "2.1.329"
       },
-      "status": "reserved",
+      "status": "candidate_saved",
       "candidate_tag": "candidate-v1.0.107",
-      "candidate_digest": null,
-      "platform_digests": {},
+      "candidate_digest": "sha256:b7b6a90c3fdbe65be437b3a87fe931308b4791c7381115c7c949a12d7e0cf3b9",
+      "platform_digests": {
+        "amd64": "sha256:2b06eea28837ee1ead2155fab6de725eb2bd5e28d5b57b74fabef3ed55cbace4",
+        "arm64": "sha256:984a205377407c762161c51370852a5906123f5b9ea5db46d9c5998b850c2164"
+      },
       "checks": {},
       "reports": {},
       "attestation": null,
