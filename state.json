@@ -9613,7 +9613,13 @@
         "amd64": "sha256:ec7a9d166d801ee055bf0054835323f82a164b8c698f67ad739bc29e17abc503",
         "arm64": "sha256:3b1c95a685b1bb3f8d66082370425e142aa424ebb426f48a5336d8e257fa8896"
       },
-      "checks": {},
+      "checks": {
+        "amd64:codex": {
+          "digest": "sha256:80ab4b6eb80897f978cdeb6b9761b744f2c8f8d6b0db08bd28331ff9e05645bf",
+          "version": "0.171.0",
+          "at": "2026-11-20T21:21:28.096771+00:00"
+        }
+      },
       "reports": {},
       "attestation": null,
       "attempts": {
