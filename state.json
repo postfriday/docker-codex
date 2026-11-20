@@ -9628,6 +9628,11 @@
           "digest": "sha256:80ab4b6eb80897f978cdeb6b9761b744f2c8f8d6b0db08bd28331ff9e05645bf",
           "version": "2.1.330",
           "at": "2026-11-20T21:21:31.857869+00:00"
+        },
+        "arm64:codex": {
+          "digest": "sha256:80ab4b6eb80897f978cdeb6b9761b744f2c8f8d6b0db08bd28331ff9e05645bf",
+          "version": "0.171.0",
+          "at": "2026-11-20T21:24:13.174192+00:00"
         }
       },
       "reports": {
