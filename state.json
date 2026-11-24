@@ -9743,6 +9743,11 @@
           "digest": "sha256:deec7f4c8ec23b5b85adab4acaf85ccf9fd5eca0c33602bdf219f9e6c2ed7267",
           "version": "0.172.0",
           "at": "2026-11-24T01:09:58.639597+00:00"
+        },
+        "arm64:opencode": {
+          "digest": "sha256:deec7f4c8ec23b5b85adab4acaf85ccf9fd5eca0c33602bdf219f9e6c2ed7267",
+          "version": "1.19.6",
+          "at": "2026-11-24T01:10:10.403320+00:00"
         }
       },
       "reports": {
