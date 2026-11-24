@@ -9716,7 +9716,7 @@
         "opencode": "1.19.6",
         "claude": "2.1.331"
       },
-      "status": "candidate_saved",
+      "status": "verified",
       "candidate_tag": "candidate-v1.0.109",
       "candidate_digest": "sha256:deec7f4c8ec23b5b85adab4acaf85ccf9fd5eca0c33602bdf219f9e6c2ed7267",
       "platform_digests": {
