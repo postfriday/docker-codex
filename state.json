@@ -9723,7 +9723,14 @@
       "checks": {},
       "reports": {},
       "attestation": null,
-      "attempts": {},
+      "attempts": {
+        "45300609456:1": {
+          "status": "running",
+          "started_at": "2026-11-24T00:52:18.856721+00:00",
+          "run_id": "45300609456",
+          "run_attempt": "1"
+        }
+      },
       "failure_count": 0,
       "last_error": null,
       "failure_issue": null,
