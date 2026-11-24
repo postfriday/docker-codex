@@ -9797,7 +9797,8 @@
       "tag_intents": {
         "1.0.109": "sha256:deec7f4c8ec23b5b85adab4acaf85ccf9fd5eca0c33602bdf219f9e6c2ed7267",
         "a0a73e6": "sha256:deec7f4c8ec23b5b85adab4acaf85ccf9fd5eca0c33602bdf219f9e6c2ed7267",
-        "a0a73e6592ec822d1c4aac39340111c02089ccf5": "sha256:deec7f4c8ec23b5b85adab4acaf85ccf9fd5eca0c33602bdf219f9e6c2ed7267"
+        "a0a73e6592ec822d1c4aac39340111c02089ccf5": "sha256:deec7f4c8ec23b5b85adab4acaf85ccf9fd5eca0c33602bdf219f9e6c2ed7267",
+        "1.0": "sha256:deec7f4c8ec23b5b85adab4acaf85ccf9fd5eca0c33602bdf219f9e6c2ed7267"
       }
     }
   }
