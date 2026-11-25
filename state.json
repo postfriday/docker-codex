@@ -9826,10 +9826,13 @@
         "opencode": "1.19.6",
         "claude": "2.1.332"
       },
-      "status": "reserved",
+      "status": "candidate_saved",
       "candidate_tag": "candidate-v1.0.110",
-      "candidate_digest": null,
-      "platform_digests": {},
+      "candidate_digest": "sha256:63aea7352800a36135335b8e9f2baee7038cb2b5a59b2278dda2a0a60cbe53e5",
+      "platform_digests": {
+        "amd64": "sha256:3d9fdaf1719ca8041f5e7c6182fae113be093de45f8a63097756e825595ee652",
+        "arm64": "sha256:eee2ae27783429b55acefd3d35bf9bcf1cac2f1d40087194ed44420e6ebfff82"
+      },
       "checks": {},
       "reports": {},
       "attestation": null,
