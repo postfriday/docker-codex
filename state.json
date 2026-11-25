@@ -9826,7 +9826,7 @@
         "opencode": "1.19.6",
         "claude": "2.1.332"
       },
-      "status": "verified",
+      "status": "publishing",
       "candidate_tag": "candidate-v1.0.110",
       "candidate_digest": "sha256:63aea7352800a36135335b8e9f2baee7038cb2b5a59b2278dda2a0a60cbe53e5",
       "platform_digests": {
