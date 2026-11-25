@@ -9858,6 +9858,11 @@
           "digest": "sha256:63aea7352800a36135335b8e9f2baee7038cb2b5a59b2278dda2a0a60cbe53e5",
           "version": "1.19.6",
           "at": "2026-11-25T04:28:18.896925+00:00"
+        },
+        "arm64:claude": {
+          "digest": "sha256:63aea7352800a36135335b8e9f2baee7038cb2b5a59b2278dda2a0a60cbe53e5",
+          "version": "2.1.332",
+          "at": "2026-11-25T04:28:21.391133+00:00"
         }
       },
       "reports": {
