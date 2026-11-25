@@ -9848,6 +9848,11 @@
           "digest": "sha256:63aea7352800a36135335b8e9f2baee7038cb2b5a59b2278dda2a0a60cbe53e5",
           "version": "2.1.332",
           "at": "2026-11-25T04:26:08.360929+00:00"
+        },
+        "arm64:codex": {
+          "digest": "sha256:63aea7352800a36135335b8e9f2baee7038cb2b5a59b2278dda2a0a60cbe53e5",
+          "version": "0.172.0",
+          "at": "2026-11-25T04:28:09.917377+00:00"
         }
       },
       "reports": {
